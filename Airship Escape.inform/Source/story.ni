@@ -61,6 +61,7 @@ The Exit Room is a room.
 The Exit Room is north of the Hallway 1F.
 
 [The second floor of the pirate ship]
+[test]
 The East Hallway 2F is a room.
 
 The West Hallway 2F is a room.
