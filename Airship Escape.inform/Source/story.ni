@@ -63,7 +63,6 @@ The Exit Room is a room.
 The Exit Room is north of the Hallway 1F.
 
 [The second floor of the pirate ship]
-[test]
 The East Hallway 2F is a room.
 
 The West Hallway 2F is a room.
@@ -79,14 +78,66 @@ The Dining Area is a room.
 The Dining Area is north of the West Hallway 2F and west of the Kitchen.
 
 The Crew Quarters is a room.
-The Crew Quarters is south of the West Hallway 2F.
 
 The Captain's Room is a room.
-The Captain's Room is west of the West Hallway 2F.
+
+[floor 2 NPCs]
+
+The Captain is a man.
+The Captiain is in The Captain's Room.
+
+[Doors for the 2nd floor]
+The Captain's Door is a door."The captain's door has the word 'Captain' writen across the top.  There is no door nob or key hole.  On a plaque on the door there is the message [line break] 'Only those with the password may enter to speak to the captain.'"
+The Captain's Door is locked.
+The Captain's Door is west of The West Hallway 2F and east of The Captain's room.
+The Captain's Door is scenery.
+
+[door password]
+After examining The Captain's Door:
+	now the command prompt is "Say the password. >";
+	continue the action.
+	[check password]
+After reading a command when the command prompt is "Say the password. >":
+	increment the turn count;
+	if the player's command matches "password": 
+		now The Captain's Door is unlocked;
+		say "You hear a click inside the door, and it silently swings ajar.";
+		now the command prompt is ">";
+		reject the player's command;
+		now the Captain's Door is unlocked;
+	otherwise:
+		say "nothing happens";
+		now the command prompt is ">";
+		reject the player's command.
+
+The Crew Quarters Door is a door.
+The Crew Quarters Door is locked.
+The Crew Quarters Door is north of The Crew Quarters and south of The West Hallway 2F.
+
+The Crew Quarters Key is an object.
+The Crew Quarters Key unlocks The Crew Quarters Door.
 
 [The deck of the pirate ship]
-The deck is a room.
+The deck is a room. "The deck is the highest level of the ship.  All around you is space? or sky or something?  There are fishing poles on a rack."
 
+[fishing pole]
+Fishing Pole is a thing. "There are several fishing poles all ready to go.".
+Fishing Pole is portable.
+Fishing Pole is in the Deck.
+combinable of Fishing Pole is true.
+
+[logic for combining the fishing rod with the bait]
+A thing has some truth state called combinable.  The combinable of a thing is usually false.
+Combining is an action applying to two things.  Understand "combine [something] and [something]" as Combining.
+Check Combining when the combinable of the noun is false:
+	instead say "cannot combine.";
+	stop the action.
+Check Combining when the combinable of the second noun is false:
+	instead say "cannot combine.";
+	stop the action.
+[Report Combining something and something:
+	remove the noun from play;
+	remove the second noun from play.]
 
 [Elevator stuff]
 Table of Floors
