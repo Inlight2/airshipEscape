@@ -4,6 +4,9 @@
 [See http://inform7.com/learn/man/ex162.html for other font things]
 
 
+A pirate is a person.
+The pirate captain is a person.
+
 [Define some spells]
 Casting is an action applying to nothing.
 Understand "cast" as casting.
@@ -29,15 +32,14 @@ Instead of telling the old man about something:
 Instead of asking the old man about something: 
 	say "The old man says, 'I've got nothing to say!'"
 
-
-[Probably needs a better name]
-The Jail 2 is a room.
+The West Jail is a room.
 "You walk into another part of the jail and see a door from which light emanates. It's probably the way out. Where are the guards?"
-The Jail 2 is west of the Jail.
+The West Jail is west of the Jail.
+The West Jail is dark.
 
 The Hallway 1F is a room.
 "A hallway stretches out before you. The walls are plain, the lights are dim, and there are rooms all along the hallway. The jail rooms are in the south. A room labeled the 'Exit Room' is to the north. You see a plain door leading to the lounge to the east."
-The Hallway 1F is north of the Jail 2.
+The Hallway 1F is north of the West Jail.
 
 The Lounge is a room.
 "It's a small area with two doors, one to the north and one to the east. There is a table in the middle of the room, on top of which lies a dirty tablecloth. There are wooden chairs scattered about the room and an uncomfortable-looking couch to the side."
