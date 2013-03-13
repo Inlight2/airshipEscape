@@ -70,6 +70,11 @@ The West Hallway 2F is west of the East Hallway 2F.
 
 The Kitchen is a room.
 The Kitchen is north of the East Hallway 2F.
+The Waffle is a thing.
+The Waffle is in the Kitchen.
+combinable of The waffle is true;
+
+
 
 The Bathroom is a room.
 The Bathroom is south of the East Hallway 2F.
@@ -121,23 +126,31 @@ The Crew Quarters Key unlocks The Crew Quarters Door.
 The deck is a room. "The deck is the highest level of the ship.  All around you is space? or sky or something?  There are fishing poles on a rack."
 
 [fishing pole]
-Fishing Pole is a thing. "There are several fishing poles all ready to go.".
-Fishing Pole is portable.
-Fishing Pole is in the Deck.
-combinable of Fishing Pole is true.
+Fishing Rod is a thing. "There is a fishing rod".
+Fishing Rod are in the Deck.
+combinable of Fishing Rod is true.
+
+Baited Fishing Rod is a thing. "descibe".
 
 [logic for combining the fishing rod with the bait]
 A thing has some truth state called combinable.  The combinable of a thing is usually false.
-Combining is an action applying to two things.  Understand "combine [something] and [something]" as Combining.
+Combining is an action applying to two things.
+Understand "combine [something] with [something]" as Combining.
 Check Combining when the combinable of the noun is false:
 	instead say "cannot combine.";
 	stop the action.
 Check Combining when the combinable of the second noun is false:
 	instead say "cannot combine.";
 	stop the action.
-[Report Combining something and something:
+Check Combining when the noun is the second noun:
+	instead say "you cannot combine the same object to itself";
+	stop the action.
+	
+Report Combining something:
 	remove the noun from play;
-	remove the second noun from play.]
+	remove the second noun from play;
+	say "You combine [the noun] with [the second noun] and produce a baited fishing rod";
+	now the player has a Baited Fishing Rod.
 
 [Elevator stuff]
 Table of Floors

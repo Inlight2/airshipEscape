@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-0x030F4E00" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7 for Windows</generator>
-  <activeNode nodeId="node-0x09FA7A30"/>
+  <activeNode nodeId="node-0x0984DE90"/>
   <item nodeId="node-0x030F4E00">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">Airship Escape&#x000A;An Interactive Fiction by Jenny Tran, Kenneth Cox&#x000A;Release 1 / Serial number 130313 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD&#x000A;&#x000A;Jail&#x000A;The light above you is dim. Your jail cell is open. You can leave through the west doorway.&#x000A;&#x000A;There is an old man sitting on a wooden bench in a jail cell next to you.&#x000A;&#x000A;&gt;</result>
@@ -296,13 +296,14 @@
   </item>
   <item nodeId="node-0x09FA7800">
     <command xml:space="preserve">exit</command>
-    <result xml:space="preserve">deck&#x000A;The deck is the highest level of the ship.  All around you is space? or sky or something?  There are fishing poles on a rack.&#x000A;&#x000A;You can enter the elevator here.&#x000A;&#x000A;You can also see Fishing Pole here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">deck&#x000A;The deck is the highest level of the ship.  All around you is space? or sky or something?  There are fishing poles on a rack.&#x000A;&#x000A;You can enter the elevator here.&#x000A;&#x000A;There is a fishing rod&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-0x09FA7870"/>
+      <child nodeId="node-0x09FA7AA0"/>
     </children>
   </item>
   <item nodeId="node-0x09FA7870">
@@ -346,6 +347,91 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
+  <item nodeId="node-0x09FA7AA0">
+    <command xml:space="preserve">get fishing pole</command>
+    <result xml:space="preserve">I only understood you as far as wanting to get Fishing Rod.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x09FA7B10"/>
+    </children>
+  </item>
+  <item nodeId="node-0x09FA7B10">
+    <command xml:space="preserve">x fishing pole</command>
+    <result xml:space="preserve">I only understood you as far as wanting to examine Fishing Rod.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x09FA7B80"/>
+    </children>
+  </item>
+  <item nodeId="node-0x09FA7B80">
+    <command xml:space="preserve">get fishing pole</command>
+    <result xml:space="preserve">I only understood you as far as wanting to get Fishing Rod.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x09FA7BF0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x09FA7BF0">
+    <command xml:space="preserve">invintory</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x09FA7C60"/>
+    </children>
+  </item>
+  <item nodeId="node-0x09FA7C60">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x09FA7DB0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x09FA7DB0">
+    <command xml:space="preserve">combine</command>
+    <result xml:space="preserve">What do you want to combine?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x09FA7D40"/>
+    </children>
+  </item>
+  <item nodeId="node-0x09FA7D40">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying nothing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x09FA7CD0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x09FA7CD0">
+    <command xml:space="preserve">get fishing rod</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
   <item nodeId="node-0x031767E8">
     <command xml:space="preserve">press 2</command>
     <result xml:space="preserve">You press button 2. The elevator whirs into action and moves to the correct level.&#x000A;&#x000A;&gt;</result>
@@ -355,6 +441,7 @@
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-0x03176778"/>
+      <child nodeId="node-0x09FA7F70"/>
     </children>
   </item>
   <item nodeId="node-0x03176778">
@@ -437,6 +524,146 @@
   <item nodeId="node-0x0950C088">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">(first opening the Captain's Door)&#x000A;&#x000A;Captain's Room&#x000A;You can see a Captiain here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x09FA7F70">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">East Hallway 2F&#x000A;You can enter the elevator here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x09FA7E20"/>
+    </children>
+  </item>
+  <item nodeId="node-0x09FA7E20">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Kitchen&#x000A;You can see a Waffle here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x09FA7F00"/>
+    </children>
+  </item>
+  <item nodeId="node-0x09FA7F00">
+    <command xml:space="preserve">get waffle</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x09FA7E90"/>
+    </children>
+  </item>
+  <item nodeId="node-0x09FA7E90">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">East Hallway 2F&#x000A;You can enter the elevator here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0984DB10"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0984DB10">
+    <command xml:space="preserve">enter elevator</command>
+    <result xml:space="preserve">Elevator&#x000A;To operate: Press number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0984DB80"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0984DB80">
+    <command xml:space="preserve">press 3</command>
+    <result xml:space="preserve">You press button 3. The elevator whirs into action and moves to the correct level.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0984DBF0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0984DBF0">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">deck&#x000A;The deck is the highest level of the ship.  All around you is space? or sky or something?  There are fishing poles on a rack.&#x000A;&#x000A;You can enter the elevator here.&#x000A;&#x000A;There is a fishing rod&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0984DC60"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0984DC60">
+    <command xml:space="preserve">get fishing rod</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0984DDB0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0984DDB0">
+    <command xml:space="preserve">combine Waffle and fishing rod</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0984DD40"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0984DD40">
+    <command xml:space="preserve">combine</command>
+    <result xml:space="preserve">What do you want to combine?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0984DCD0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0984DCD0">
+    <command xml:space="preserve">combine waffle</command>
+    <result xml:space="preserve">What do you want to combine the Waffle with?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0984DF00"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0984DF00">
+    <command xml:space="preserve">combine waffle with fishing</command>
+    <result xml:space="preserve">You combine the Waffle with Fishing Rod and produce a baited fishing rod&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0984DE90"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0984DE90">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  Baited Fishing Rod&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
