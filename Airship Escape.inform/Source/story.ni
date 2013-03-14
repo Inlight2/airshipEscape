@@ -23,6 +23,7 @@ The light is scenery in the Jail.
 Instead of examining the light:
 	say "There is a light fixture hanging above you. The light obviously hasn't been replaced in a while. You can barely see anything in such dim lighting!"
 	
+[Old man stuff]
 The old man is a person.
 "There is an old man sitting on a wooden bench in a jail cell next to you."
 The old man is in the Jail.
@@ -31,36 +32,80 @@ Instead of telling the old man about something:
 	say "The old man says, 'Big deal.'"
 Instead of asking the old man about something: 
 	say "The old man says, 'I've got nothing to say!'"
+	
+[Make a locked jail door which requires a key from the west jail to open]
+The Jail Door is a door.
+The Jail Door is locked.
+The Jail Door is north of the West Jail and south of the Hallway 1F.
+The matching key of the Jail Door is the silver key.
 
+[West Jail is the first puzzle sort of]
 The West Jail is a room.
 "You walk into another part of the jail and see a door from which light emanates. It's probably the way out. Where are the guards?"
 The West Jail is west of the Jail.
-The West Jail is dark.
+[The West Jail is dark.]
+A pot is in the West Jail.
+A pot is a container.
+A silver key is in the pot.
 
+[This might affect other unlocks]
+After unlocking: say "The jail door opens. You can go north into the light."
+
+[Make the first floor hallway]
 The Hallway 1F is a room.
 "A hallway stretches out before you. The walls are plain, the lights are dim, and there are rooms all along the hallway. The jail rooms are in the south. A room labeled the 'Exit Room' is to the north. You see a plain door leading to the lounge to the east."
-The Hallway 1F is north of the West Jail.
 
+[The lounge connects the servant rooms]
 The Lounge is a room.
 "It's a small area with two doors, one to the north and one to the east. There is a table in the middle of the room, on top of which lies a dirty tablecloth. There are wooden chairs scattered about the room and an uncomfortable-looking couch to the side."
 The table is scenery in the lounge.
 The tablecloth is scenery in the lounge.
 Wooden chairs are scenery in the lounge.
-The Lounge is east of the Hallway 1F.
 
+[Make a lounge door]
+The Lounge Door is a door.
+The Lounge Door is east of the Hallway 1F and west of the Lounge.
+
+[Make the North Servant Room]
 The North Servant Room is a room.
 "You walk into the room lined with a handful of beds. There is no one around."
 Beds are scenery in the lounge.
-The Servant Room 1 is north of the Lounge.
 
+[Logic for reading]
+A thing has some text called printing.
+The printing of a thing is usually "blank".
+Understand the command "read" as something new.
+Understand "read [something]" as reading. 
+Reading is an action applying to one thing, requiring light.
+Check reading: if the printing of the noun is "blank", say "You can only read journal pages, silly." instead.
+Carry out reading: say "[printing of the noun]". Report reading: do nothing.
+
+Journal Page 1 is a thing in the North Servant Room.
+The description is "It's a journal page that looked like it was torn out carelessly. Something tells you that there's more than one lying around this ship."
+The printing of the Journal Page 1 is "Page 1 reads: 'We won the battle against the wizards!'"
+
+[Make the North Servant Room door]
+The North Servant Room Door is a door.
+The North Servant Room Door is south of the North Servant Room and north of the Lounge.
+
+[Make the South Servant Room]
 The South Servant Room is a room.
 "You walk into the room lined with a handful of beds. There is no one around."
 Beds are scenery in the lounge.
-The Servant Room 2 is east of the Lounge.
 
+Journal Page 2 is a thing in the South Servant Room.
+The description is "It's a journal page that looked like it was torn out carelessly. Something tells you that there's more than one lying around this ship."
+The printing of the Journal Page 2 is "Page 2 reads: 'We lost many in the battle.'"
+
+[Make the East Servant Room door]
+The East Servant Room Door is a door.
+The East Servant Room Door is east of the Lounge and west of the South Servant Room.
+
+[Make the Exit Room and door]
 The Exit Room is a room.
 "You notice a door with a giant, golden lock in the small, empty room. There is no door handle. You cannot open it without the key."
-The Exit Room is north of the Hallway 1F.
+The Exit Room Door is a door.
+The Exit Room door is south of the Exit Room and north of the Hallway 1F.
 
 [The second floor of the pirate ship]
 The East Hallway 2F is a room.
