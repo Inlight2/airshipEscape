@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-0x030F4E00" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7 for Windows</generator>
-  <activeNode nodeId="node-0x0984DE90"/>
+  <activeNode nodeId="node-0x0984E050"/>
   <item nodeId="node-0x030F4E00">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">Airship Escape&#x000A;An Interactive Fiction by Jenny Tran, Kenneth Cox&#x000A;Release 1 / Serial number 130313 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD&#x000A;&#x000A;Jail&#x000A;The light above you is dim. Your jail cell is open. You can leave through the west doorway.&#x000A;&#x000A;There is an old man sitting on a wooden bench in a jail cell next to you.&#x000A;&#x000A;&gt;</result>
@@ -15,6 +15,7 @@
       <child nodeId="node-0x031249B0"/>
       <child nodeId="node-0x002A4310"/>
       <child nodeId="node-0x09FA7A30"/>
+      <child nodeId="node-0x0984DF70"/>
     </children>
   </item>
   <item nodeId="node-0x030F52C0">
@@ -839,6 +840,36 @@
   <item nodeId="node-0x09FA7A30">
     <command xml:space="preserve">combine</command>
     <result xml:space="preserve">(the old man and the old man)&#x000A;cannot combine.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0984DF70">
+    <command xml:space="preserve">x old man</command>
+    <result xml:space="preserve">You see nothing special about the old man.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0984DFE0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0984DFE0">
+    <command xml:space="preserve">read old man</command>
+    <result xml:space="preserve">You see nothing special about the old man.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0984E050"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0984E050">
+    <command xml:space="preserve">read light</command>
+    <result xml:space="preserve">There is a light fixture hanging above you. The light obviously hasn't been replaced in a while. You can barely see anything in such dim lighting!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
