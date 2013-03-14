@@ -115,14 +115,28 @@ The West Hallway 2F is west of the East Hallway 2F.
 
 The Kitchen is a room.
 The Kitchen is north of the East Hallway 2F.
+[waffle]
 The Waffle is a thing.
 The Waffle is in the Kitchen.
-combinable of The waffle is true;
+combinable of The waffle is true.
 
-
+[can't grab the waffle when the cook is in the room]
+Instead of taking the waffle while the cook is in the kitchen:
+	say "You are about to get the waffle but realise that if you get any closer the cook will see you!  You're not";
+	stop the action.
 
 The Bathroom is a room.
 The Bathroom is south of the East Hallway 2F.
+A toilet is a thing. "There is a wooden bench pushed up against the back wall.  This bench has a hole in it.  You can probably guess why".
+A toilet is in the Bathroom.
+
+The hole is a thing. "you look down into the hole in the bench.   The smell alone almost makes you vomit.  You can't see anything, in the dark hole but it almost sounds like something is sloshing around in there."
+The hole is in the Bathroom.
+The hole is scenery.
+
+[monster in the bathroom]
+A monster in the toilet is a thing.  "You can't see anything in the dark hole.".
+A monster in the toilet is in the bathroom.
 
 The Dining Area is a room.
 The Dining Area is north of the West Hallway 2F and west of the Kitchen.
@@ -135,6 +149,9 @@ The Captain's Room is a room.
 
 The Captain is a man.
 The Captiain is in The Captain's Room.
+
+The Cook is a man.
+The Cook is in the kitchen.
 
 [Doors for the 2nd floor]
 The Captain's Door is a door."The captain's door has the word 'Captain' writen across the top.  There is no door nob or key hole.  On a plaque on the door there is the message [line break] 'Only those with the password may enter to speak to the captain.'"
@@ -164,7 +181,7 @@ The Crew Quarters Door is a door.
 The Crew Quarters Door is locked.
 The Crew Quarters Door is north of The Crew Quarters and south of The West Hallway 2F.
 
-The Crew Quarters Key is an object.
+The Crew Quarters Key is a thing.
 The Crew Quarters Key unlocks The Crew Quarters Door.
 
 [The deck of the pirate ship]
@@ -175,7 +192,7 @@ Fishing Rod is a thing. "There is a fishing rod".
 Fishing Rod are in the Deck.
 combinable of Fishing Rod is true.
 
-Baited Fishing Rod is a thing. "descibe".
+Baited Fishing Rod is a thing. "The fishing rod now has some bait on the hook.  Lets get fishing!".
 
 [logic for combining the fishing rod with the bait]
 A thing has some truth state called combinable.  The combinable of a thing is usually false.
@@ -196,6 +213,13 @@ Report Combining something:
 	remove the second noun from play;
 	say "You combine [the noun] with [the second noun] and produce a baited fishing rod";
 	now the player has a Baited Fishing Rod.
+	
+[Fishing]
+Fishing is an action applying to one thing.
+Understand "Fish with [something]" as Fishing.
+Check Fishing:
+	if the noun is a fishing rod:
+		say "You cast the line but nothing is biting...  You would probably have better luck with some bait on the hook".
 
 [Elevator stuff]
 Table of Floors
