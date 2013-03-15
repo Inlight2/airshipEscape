@@ -22,17 +22,13 @@ Check lighting:
 Carry out lighting:
 	Carry out lighting the noun: now the noun is lit;
 	say "You hold your hand out in a fist, then open it slowly. Your hand warms up as a dancing ball of flame forms above your palm. With a gentle flick of your wrist, the flames fly out of your hand and to the [noun]. Now it is on fire."
-		
-
-
-
 
 [The first floor of the pirate ship]
 The Jail is a room.
-"The [light] above you is dim. Your jail cell is open. You can leave through the west doorway."
+"The [light] above you is dim. Your jail cell is open. You can leave through the west doorway.".
 The light is scenery in the Jail.
 Instead of examining the light:
-	say "There is a light fixture hanging above you. The light obviously hasn't been replaced in a while. You can barely see anything in such dim lighting!"
+	say "There is a light fixture hanging above you. The light obviously hasn't been replaced in a while. You can barely see anything in such dim lighting!".
 	
 [Old man stuff]
 The old man is a person.
@@ -40,9 +36,9 @@ The old man is a person.
 The old man is in the Jail.
 Wooden bench is scenery in the Jail.
 Instead of telling the old man about something:
-	say "The old man says, 'Big deal.'"
+	say "The old man says, 'Big deal.'".
 Instead of asking the old man about something: 
-	say "The old man says, 'I've got nothing to say!'"
+	say "The old man says, 'I've got nothing to say!'".
 	
 [Make a locked jail door which requires a key from the west jail to open]
 The Jail Door is a door.
@@ -69,11 +65,11 @@ There is a torch in the Jail.
 The torch is lightable.
 
 [This might affect other unlocks]
-After unlocking: say "The jail door opens. You can go north into the light."
+After unlocking: say "The jail door opens. You can go north into the light.".
 
 [Make the first floor hallway]
 The Hallway 1F is a room.
-"A hallway stretches out before you. The walls are plain, the lights are dim, and there are rooms all along the hallway. The jail rooms are in the south. A room labeled the 'Exit Room' is to the north. You see a plain door leading to the lounge to the east."
+"A hallway stretches out before you. The walls are plain, the lights are dim, and there are rooms all along the hallway. The jail rooms are in the south. A room labeled the 'Exit Room' is to the north. You see a plain door leading to the lounge to the east.".
 
 [The lounge connects the servant rooms]
 The Lounge is a room.
@@ -224,6 +220,7 @@ Baited Fishing Rod is a thing. "The fishing rod now has some bait on the hook.  
 A thing has some truth state called combinable.  The combinable of a thing is usually false.
 Combining is an action applying to two things.
 Understand "combine [something] with [something]" as Combining.
+Understand "combine [something] and [something]" as Combining.
 Check Combining when the combinable of the noun is false:
 	instead say "cannot combine.";
 	stop the action.
@@ -241,11 +238,29 @@ Report Combining something:
 	now the player has a Baited Fishing Rod.
 	
 [Fishing]
-Fishing is an action applying to one thing.
+Fishing is an action applying to one object.
 Understand "Fish with [something]" as Fishing.
 Check Fishing:
-	if the noun is a fishing rod:
-		say "You cast the line but nothing is biting...  You would probably have better luck with some bait on the hook".
+	if location of player is the Deck:
+		if the noun is a fishing rod:
+			say "You cast the line over the edge of the ship.  You remember the ship is floating in the sky and real in the line.  You didn't catch anything.";
+		otherwise:
+			if the noun is a baited fishing rod:
+				say "You cast the line over the edge of the ship.  You remember the ship is floating in the sky and real in the line.  You didn't catch anything, but the bait is still attached.";
+			otherwise:
+				say "You can't use [the noun] to fish!";
+	otherwise:
+		if the location of the player is the Bathroom:
+			if the noun is a fishing rod:
+				say "You cast the line into the toilet.  You wait a while but nothing takes the bait, er nothing takes the string.  Maybe you should get some bait.";
+			otherwise:
+				if the noun is a baited fishing rod:
+					say "You cast the line into the toilet.  You can hear the creature moving through the filth towards the bait.  There a tug on the string and you real it in.  You now have a very stanky fish!";
+					now the player has Crew Quarters Key;
+				otherwise:
+					say "You can't use [the noun] to fish!";
+		otherwise:
+			say "there is no where to fish here".
 
 [Elevator stuff]
 Table of Floors
@@ -285,4 +300,6 @@ Understand "leave elevator" as exiting. Understand "exit elevator" as exiting.
 Check exiting:
 	if the player is not in the Elevator, say "You need to be in the elevator first." instead.
 
-
+After reading a command when the player's command matches "waffle":
+	now the player has a waffle;
+	now the player is in the kitchen.
