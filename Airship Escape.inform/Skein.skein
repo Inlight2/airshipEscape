@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-0x02DE9728" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x02E36650" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7 for Windows</generator>
-  <activeNode nodeId="node-0x02E9FBF8"/>
-  <item nodeId="node-0x02DE9728">
+  <activeNode nodeId="node-0x02E29EE0"/>
+  <item nodeId="node-0x02E36650">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">Airship Escape&#x000A;An Interactive Fiction by Jenny Tran, Kenneth Cox&#x000A;Release 1 / Serial number 130315 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD&#x000A;&#x000A;Jail&#x000A;The light above you is dim. Your jail cell is open. You can leave through the west doorway.&#x000A;&#x000A;There is an old man sitting on a wooden bench in a jail cell next to you.&#x000A;&#x000A;You see a torch that looks lightable. You recall a fire spell that you learned when you first became a wizard.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -10,11 +10,12 @@
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x02DE9798"/>
-      <child nodeId="node-0x02E9F728"/>
+      <child nodeId="node-0x02E366C0"/>
+      <child nodeId="node-0x02E37E68"/>
+      <child nodeId="node-0x02E29EE0"/>
     </children>
   </item>
-  <item nodeId="node-0x02DE9798">
+  <item nodeId="node-0x02E366C0">
     <command xml:space="preserve">waffle</command>
     <result xml:space="preserve">Kitchen&#x000A;You can see a Cook here.&#x000A;&#x000A;That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -22,10 +23,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DF1D28"/>
+      <child nodeId="node-0x02E0DAC8"/>
     </children>
   </item>
-  <item nodeId="node-0x02DF1D28">
+  <item nodeId="node-0x02E0DAC8">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">East Hallway 2F&#x000A;You can enter the elevator here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -33,11 +34,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DF1748"/>
-      <child nodeId="node-0x02E1A5C0"/>
+      <child nodeId="node-0x02E0DB38"/>
+      <child nodeId="node-0x02E37BC8"/>
     </children>
   </item>
-  <item nodeId="node-0x02DF1748">
+  <item nodeId="node-0x02E0DB38">
     <command xml:space="preserve">enter elevator</command>
     <result xml:space="preserve">Elevator&#x000A;To operate: Press number.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -45,10 +46,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DE9E20"/>
+      <child nodeId="node-0x02E0DC70"/>
     </children>
   </item>
-  <item nodeId="node-0x02DE9E20">
+  <item nodeId="node-0x02E0DC70">
     <command xml:space="preserve">press 3</command>
     <result xml:space="preserve">You press button 3. The elevator whirs into action and moves to the correct level.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -56,10 +57,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DF7A68"/>
+      <child nodeId="node-0x02E200B0"/>
     </children>
   </item>
-  <item nodeId="node-0x02DF7A68">
+  <item nodeId="node-0x02E200B0">
     <command xml:space="preserve">exit</command>
     <result xml:space="preserve">deck&#x000A;The deck is the highest level of the ship.  All around you is space? or sky or something?  There are fishing poles on a rack.&#x000A;&#x000A;You can enter the elevator here.&#x000A;&#x000A;There is a fishing rod&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -67,10 +68,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DF5278"/>
+      <child nodeId="node-0x02E20120"/>
     </children>
   </item>
-  <item nodeId="node-0x02DF5278">
+  <item nodeId="node-0x02E20120">
     <command xml:space="preserve">get fishing rod</command>
     <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -78,10 +79,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DF14B0"/>
+      <child nodeId="node-0x02E20190"/>
     </children>
   </item>
-  <item nodeId="node-0x02DF14B0">
+  <item nodeId="node-0x02E20190">
     <command xml:space="preserve">enter elvator</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -89,10 +90,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DF1520"/>
+      <child nodeId="node-0x02E202C8"/>
     </children>
   </item>
-  <item nodeId="node-0x02DF1520">
+  <item nodeId="node-0x02E202C8">
     <command xml:space="preserve">press 2</command>
     <result xml:space="preserve">You cannot control the express panoramic elevator unless you are yourself inside.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -100,10 +101,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DE9478"/>
+      <child nodeId="node-0x02E36C90"/>
     </children>
   </item>
-  <item nodeId="node-0x02DE9478">
+  <item nodeId="node-0x02E36C90">
     <command xml:space="preserve">exit</command>
     <result xml:space="preserve">But you aren't in anything at the moment.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -111,10 +112,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DF6B10"/>
+      <child nodeId="node-0x02E36D00"/>
     </children>
   </item>
-  <item nodeId="node-0x02DF6B10">
+  <item nodeId="node-0x02E36D00">
     <command xml:space="preserve">combine</command>
     <result xml:space="preserve">What do you want to combine?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -122,10 +123,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DF6B80"/>
+      <child nodeId="node-0x02E36E20"/>
     </children>
   </item>
-  <item nodeId="node-0x02DF6B80">
+  <item nodeId="node-0x02E36E20">
     <command xml:space="preserve">combine fishing rod with waffle</command>
     <result xml:space="preserve">You combine Fishing Rod with the Waffle and produce a baited fishing rod&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -133,10 +134,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DF6BF0"/>
+      <child nodeId="node-0x02E36E90"/>
     </children>
   </item>
-  <item nodeId="node-0x02DF6BF0">
+  <item nodeId="node-0x02E36E90">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -144,10 +145,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DF6C60"/>
+      <child nodeId="node-0x02E36F00"/>
     </children>
   </item>
-  <item nodeId="node-0x02DF6C60">
+  <item nodeId="node-0x02E36F00">
     <command xml:space="preserve">enter elevattor</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -155,10 +156,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DF6CD0"/>
+      <child nodeId="node-0x02E36F88"/>
     </children>
   </item>
-  <item nodeId="node-0x02DF6CD0">
+  <item nodeId="node-0x02E36F88">
     <command xml:space="preserve">enter elevator</command>
     <result xml:space="preserve">Elevator&#x000A;To operate: Press number.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -166,10 +167,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DF6D40"/>
+      <child nodeId="node-0x02E36FF8"/>
     </children>
   </item>
-  <item nodeId="node-0x02DF6D40">
+  <item nodeId="node-0x02E36FF8">
     <command xml:space="preserve">press 2</command>
     <result xml:space="preserve">You press button 2. The elevator whirs into action and moves to the correct level.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -177,10 +178,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DF6DB0"/>
+      <child nodeId="node-0x02E37068"/>
     </children>
   </item>
-  <item nodeId="node-0x02DF6DB0">
+  <item nodeId="node-0x02E37068">
     <command xml:space="preserve">exit</command>
     <result xml:space="preserve">East Hallway 2F&#x000A;You can enter the elevator here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -188,10 +189,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DF6E20"/>
+      <child nodeId="node-0x02E370D8"/>
     </children>
   </item>
-  <item nodeId="node-0x02DF6E20">
+  <item nodeId="node-0x02E370D8">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Bathroom&#x000A;There is a wooden bench pushed up against the back wall.  This bench has a hole in it.  You can probably guess why&#x000A;&#x000A;You can't see anything in the dark hole.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -199,10 +200,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DF6E90"/>
+      <child nodeId="node-0x02E37148"/>
     </children>
   </item>
-  <item nodeId="node-0x02DF6E90">
+  <item nodeId="node-0x02E37148">
     <command xml:space="preserve">fish</command>
     <result xml:space="preserve">(with Baited Fishing Rod)&#x000A;You cast the line into the toilet.  You can hear the creature moving through the filth towards the bait.  There a tug on the string and you real it in.  You now have a very stanky fish!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -210,10 +211,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DF6F00"/>
+      <child nodeId="node-0x02E371B8"/>
     </children>
   </item>
-  <item nodeId="node-0x02DF6F00">
+  <item nodeId="node-0x02E371B8">
     <command xml:space="preserve">inbentory</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -221,10 +222,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DF6F70"/>
+      <child nodeId="node-0x02E37228"/>
     </children>
   </item>
-  <item nodeId="node-0x02DF6F70">
+  <item nodeId="node-0x02E37228">
     <command xml:space="preserve">inventory</command>
     <result xml:space="preserve">You are carrying:&#x000A;  a Crew Quarters Key&#x000A;  Baited Fishing Rod&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -232,10 +233,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DF6FE0"/>
+      <child nodeId="node-0x02E37298"/>
     </children>
   </item>
-  <item nodeId="node-0x02DF6FE0">
+  <item nodeId="node-0x02E37298">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">East Hallway 2F&#x000A;You can enter the elevator here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -243,10 +244,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DF7050"/>
+      <child nodeId="node-0x02E37308"/>
     </children>
   </item>
-  <item nodeId="node-0x02DF7050">
+  <item nodeId="node-0x02E37308">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">West Hallway 2F&#x000A;You can see a Crew Quarters Door here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -254,10 +255,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DF70C0"/>
+      <child nodeId="node-0x02E37378"/>
     </children>
   </item>
-  <item nodeId="node-0x02DF70C0">
+  <item nodeId="node-0x02E37378">
     <command xml:space="preserve">unlock crew</command>
     <result xml:space="preserve">What do you want to unlock the Crew Quarters Key with?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -265,10 +266,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DF7130"/>
+      <child nodeId="node-0x02E373E8"/>
     </children>
   </item>
-  <item nodeId="node-0x02DF7130">
+  <item nodeId="node-0x02E373E8">
     <command xml:space="preserve">unlock crew with key</command>
     <result xml:space="preserve">(the Crew Quarters Key with the Crew Quarters Key)&#x000A;That doesn't seem to be something you can unlock.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -276,10 +277,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DF71A0"/>
+      <child nodeId="node-0x02E37458"/>
     </children>
   </item>
-  <item nodeId="node-0x02DF71A0">
+  <item nodeId="node-0x02E37458">
     <command xml:space="preserve">unlock door with key</command>
     <result xml:space="preserve">(the Crew Quarters Door with the Crew Quarters Key)&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -287,10 +288,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DFADE8"/>
+      <child nodeId="node-0x02E374C8"/>
     </children>
   </item>
-  <item nodeId="node-0x02DFADE8">
+  <item nodeId="node-0x02E374C8">
     <command xml:space="preserve">open crew quarters door</command>
     <result xml:space="preserve">You open the Crew Quarters Door.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -298,10 +299,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DFAFA8"/>
+      <child nodeId="node-0x02E37538"/>
     </children>
   </item>
-  <item nodeId="node-0x02DFAFA8">
+  <item nodeId="node-0x02E37538">
     <command xml:space="preserve">location</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -309,10 +310,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DFAD78"/>
+      <child nodeId="node-0x02E375A8"/>
     </children>
   </item>
-  <item nodeId="node-0x02DFAD78">
+  <item nodeId="node-0x02E375A8">
     <command xml:space="preserve">x</command>
     <result xml:space="preserve">What do you want to examine?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -320,10 +321,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DFAEC8"/>
+      <child nodeId="node-0x02E37618"/>
     </children>
   </item>
-  <item nodeId="node-0x02DFAEC8">
+  <item nodeId="node-0x02E37618">
     <command xml:space="preserve">x room</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -331,10 +332,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DFB018"/>
+      <child nodeId="node-0x02E37688"/>
     </children>
   </item>
-  <item nodeId="node-0x02DFB018">
+  <item nodeId="node-0x02E37688">
     <command xml:space="preserve">x West hallway</command>
     <result xml:space="preserve">I only understood you as far as wanting to examine west.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -342,10 +343,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DFB088"/>
+      <child nodeId="node-0x02E376F8"/>
     </children>
   </item>
-  <item nodeId="node-0x02DFB088">
+  <item nodeId="node-0x02E376F8">
     <command xml:space="preserve">x west hallway</command>
     <result xml:space="preserve">I only understood you as far as wanting to examine west.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -353,10 +354,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DFB0F8"/>
+      <child nodeId="node-0x02E37768"/>
     </children>
   </item>
-  <item nodeId="node-0x02DFB0F8">
+  <item nodeId="node-0x02E37768">
     <command xml:space="preserve">x hallway</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -364,10 +365,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DFB168"/>
+      <child nodeId="node-0x02E377D8"/>
     </children>
   </item>
-  <item nodeId="node-0x02DFB168">
+  <item nodeId="node-0x02E377D8">
     <command xml:space="preserve">get note</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -375,10 +376,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DFB1D8"/>
+      <child nodeId="node-0x02E37848"/>
     </children>
   </item>
-  <item nodeId="node-0x02DFB1D8">
+  <item nodeId="node-0x02E37848">
     <command xml:space="preserve">x door</command>
     <result xml:space="preserve">(the Crew Quarters Door)&#x000A;You see nothing special about the Crew Quarters Door.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -386,10 +387,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DFB248"/>
+      <child nodeId="node-0x02E378B8"/>
     </children>
   </item>
-  <item nodeId="node-0x02DFB248">
+  <item nodeId="node-0x02E378B8">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Crew Quarters&#x000A;You can see a Crew Quarters Door and a note here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -397,10 +398,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DFB2B8"/>
+      <child nodeId="node-0x02E37928"/>
     </children>
   </item>
-  <item nodeId="node-0x02DFB2B8">
+  <item nodeId="node-0x02E37928">
     <command xml:space="preserve">read note</command>
     <result xml:space="preserve">time whale&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -408,10 +409,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DFB328"/>
+      <child nodeId="node-0x02E37998"/>
     </children>
   </item>
-  <item nodeId="node-0x02DFB328">
+  <item nodeId="node-0x02E37998">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">West Hallway 2F&#x000A;You can see a Crew Quarters Door here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -419,10 +420,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DFB398"/>
+      <child nodeId="node-0x02E37A08"/>
     </children>
   </item>
-  <item nodeId="node-0x02DFB398">
+  <item nodeId="node-0x02E37A08">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">(first opening the Captain's Door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -430,10 +431,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02DFB408"/>
+      <child nodeId="node-0x02E37A78"/>
     </children>
   </item>
-  <item nodeId="node-0x02DFB408">
+  <item nodeId="node-0x02E37A78">
     <command xml:space="preserve">x captain</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -441,10 +442,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E1A080"/>
+      <child nodeId="node-0x02E37AE8"/>
     </children>
   </item>
-  <item nodeId="node-0x02E1A080">
+  <item nodeId="node-0x02E37AE8">
     <command xml:space="preserve">x captain's</command>
     <result xml:space="preserve">The captain's door has the word "Captain" writen across the top.  There is no door nob or key hole.  On a plaque on the door there is the message &#x000A; "Only those with the password may enter to speak to the captain."&#x000A;&#x000A;Say the password. &gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -452,10 +453,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E1A0F0"/>
+      <child nodeId="node-0x02E37B58"/>
     </children>
   </item>
-  <item nodeId="node-0x02E1A0F0">
+  <item nodeId="node-0x02E37B58">
     <command xml:space="preserve">time whale</command>
     <result xml:space="preserve">You hear a click inside the door, and it silently swings ajar.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -463,7 +464,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x02E1A5C0">
+  <item nodeId="node-0x02E37BC8">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">West Hallway 2F&#x000A;You can see a Crew Quarters Door here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -471,10 +472,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E1A630"/>
+      <child nodeId="node-0x02E37C38"/>
     </children>
   </item>
-  <item nodeId="node-0x02E1A630">
+  <item nodeId="node-0x02E37C38">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Dining Room&#x000A;You can see a dining table (on which is a table cloth) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -482,10 +483,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E1A6A0"/>
+      <child nodeId="node-0x02E37D18"/>
     </children>
   </item>
-  <item nodeId="node-0x02E1A6A0">
+  <item nodeId="node-0x02E37D18">
     <command xml:space="preserve">cast fire on the table cloth</command>
     <result xml:space="preserve">You pick up the table cloth first.&#x000A;&#x000A;lols&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -493,10 +494,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E1A710"/>
+      <child nodeId="node-0x02E37D88"/>
     </children>
   </item>
-  <item nodeId="node-0x02E1A710">
+  <item nodeId="node-0x02E37D88">
     <command xml:space="preserve">showme</command>
     <result xml:space="preserve">Dining Room - room&#x000A;    yourself - person&#x000A;        table cloth&#x000A;        Waffle&#x000A;    dining table - supporter&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -504,10 +505,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E1A780"/>
+      <child nodeId="node-0x02E37DF8"/>
     </children>
   </item>
-  <item nodeId="node-0x02E1A780">
+  <item nodeId="node-0x02E37DF8">
     <command xml:space="preserve">showme table cloth</command>
     <result xml:space="preserve">table cloth - thing&#x000A;location: carried by yourself in the Dining Room&#x000A;singular-named, improper-named; unlit, inedible, portable, handled&#x000A;printed name: "table cloth"&#x000A;printed plural name: none&#x000A;indefinite article: none&#x000A;description: none&#x000A;initial appearance: none&#x000A;printing: "blank"&#x000A;combinable: false&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -515,7 +516,7 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x02E9F728">
+  <item nodeId="node-0x02E37E68">
     <command xml:space="preserve">waffles</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -523,10 +524,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E9F808"/>
+      <child nodeId="node-0x02E37ED8"/>
     </children>
   </item>
-  <item nodeId="node-0x02E9F808">
+  <item nodeId="node-0x02E37ED8">
     <command xml:space="preserve">waffle</command>
     <result xml:space="preserve">Kitchen&#x000A;You can see a Cook here.&#x000A;&#x000A;That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -534,10 +535,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E9F878"/>
+      <child nodeId="node-0x02E29770"/>
     </children>
   </item>
-  <item nodeId="node-0x02E9F878">
+  <item nodeId="node-0x02E29770">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">East Hallway 2F&#x000A;You can enter the elevator here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -545,10 +546,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E9F8E8"/>
+      <child nodeId="node-0x02E297E0"/>
     </children>
   </item>
-  <item nodeId="node-0x02E9F8E8">
+  <item nodeId="node-0x02E297E0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">West Hallway 2F&#x000A;You can see a Crew Quarters Door here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -556,10 +557,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E9F958"/>
+      <child nodeId="node-0x02E29850"/>
     </children>
   </item>
-  <item nodeId="node-0x02E9F958">
+  <item nodeId="node-0x02E29850">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Dining Room&#x000A;You can see a dining table (on which is a table cloth) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -567,10 +568,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E9F9C8"/>
+      <child nodeId="node-0x02E298C0"/>
     </children>
   </item>
-  <item nodeId="node-0x02E9F9C8">
+  <item nodeId="node-0x02E298C0">
     <command xml:space="preserve">cast fire</command>
     <result xml:space="preserve">(on the Waffle)&#x000A;You consider lighting the Waffle but realize that it would be silly to do so.&#x000A;&#x000A;You hold your hand out in a fist, then open it slowly. Your hand warms up as a dancing ball of flame forms above your palm. With a gentle flick of your wrist, the flames fly out of your hand and to the Waffle. Now it is on fire.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -578,10 +579,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E9FA38"/>
+      <child nodeId="node-0x02E29930"/>
     </children>
   </item>
-  <item nodeId="node-0x02E9FA38">
+  <item nodeId="node-0x02E29930">
     <command xml:space="preserve">cast fire</command>
     <result xml:space="preserve">(on the Waffle)&#x000A;You consider lighting the Waffle but realize that it would be silly to do so.&#x000A;&#x000A;You hold your hand out in a fist, then open it slowly. Your hand warms up as a dancing ball of flame forms above your palm. With a gentle flick of your wrist, the flames fly out of your hand and to the Waffle. Now it is on fire.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -589,10 +590,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E9FAA8"/>
+      <child nodeId="node-0x02E299A0"/>
     </children>
   </item>
-  <item nodeId="node-0x02E9FAA8">
+  <item nodeId="node-0x02E299A0">
     <command xml:space="preserve">cast fire on the table cloth</command>
     <result xml:space="preserve">You hold your hand out in a fist, then open it slowly. Your hand warms up as a dancing ball of flame forms above your palm. With a gentle flick of your wrist, the flames fly out of your hand and to the table cloth. Now it is on fire.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -600,10 +601,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E9FB18"/>
+      <child nodeId="node-0x02E29A10"/>
     </children>
   </item>
-  <item nodeId="node-0x02E9FB18">
+  <item nodeId="node-0x02E29A10">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">West Hallway 2F&#x000A;You can see a Crew Quarters Door here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -611,12 +612,20 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E9FBF8"/>
+      <child nodeId="node-0x02E29A80"/>
     </children>
   </item>
-  <item nodeId="node-0x02E9FBF8">
+  <item nodeId="node-0x02E29A80">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Dining Room&#x000A;You can see a Cook and a dining table (on which is a table cloth) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02E29EE0">
+    <command xml:space="preserve">pancake</command>
+    <result xml:space="preserve">Hallway 1F&#x000A;A hallway stretches out before you. The walls are plain, the lights are dim, and there are rooms all along the hallway. The jail rooms are in the south. A room labeled the "Exit Room" is to the north. You see a plain door leading to the lounge to the east.&#x000A;&#x000A;You can enter the elevator here.&#x000A;&#x000A;You can also see an Exit Room Door, a Lounge Door and a Jail Door here.&#x000A;&#x000A;That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>

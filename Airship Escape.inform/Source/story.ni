@@ -3,10 +3,6 @@
 [Use [bold type]word[roman type] to make words bolded.]
 [See http://inform7.com/learn/man/ex162.html for other font things]
 
-
-A pirate is a person.
-The pirate captain is a person.
-
 Rule for implicitly taking something (called target):
 	try silently taking the target;
 	if the player carries the target, say "You pick up [the target] first."
@@ -17,11 +13,11 @@ Understand "light [thing]" as lighting.
 Understand "cast fire on [thing]" as lighting.
 
 Check lighting:
-	unless the noun is lightable, say "You consider lighting the [noun] but realize that it would be silly to do so.".
-
-Carry out lighting:
-	Carry out lighting the noun: now the noun is lit;
-	say "You hold your hand out in a fist, then open it slowly. Your hand warms up as a dancing ball of flame forms above your palm. With a gentle flick of your wrist, the flames fly out of your hand and to the [noun]. Now it is on fire."
+	unless the noun is lightable, say "You consider lighting the [noun] but realize that it would be silly to do so."
+	
+Check lighting:
+	unless the noun is not lightable, say "You hold your hand out in a fist, then open it slowly. Your hand warms up as a dancing ball of flame forms above your palm. With a gentle flick of your wrist, the flames fly out of your hand and to the [noun]. Now it is on fire.";
+	now the noun is lit.
 
 [The first floor of the pirate ship]
 The Jail is a room.
@@ -37,8 +33,12 @@ The old man is in the Jail.
 Wooden bench is scenery in the Jail.
 Instead of telling the old man about something:
 	say "The old man says, 'Big deal.'".
-Instead of asking the old man about something: 
-	say "The old man says, 'I've got nothing to say!'".
+Instead of asking the old man about "exit": 
+	say "The old man says, 'If you want to get off the pirate ship, you'll have to leave through the exit door.'"
+Instead of asking the old man about "journal page 1":
+	say "Oh yeah, that."
+Instead of asking the old man about something:
+	say "The old man says, 'I don't know what I can tell you.'"
 	
 [Make a locked jail door which requires a key from the west jail to open]
 The Jail Door is a door.
@@ -102,22 +102,22 @@ Reading is an action applying to one thing, requiring light.
 Check reading: if the printing of the noun is "blank", say "You can only read journal pages, silly." instead.
 Carry out reading: say "[printing of the noun]". Report reading: do nothing.
 
-Journal Page 1 is a thing in the North Servant Room.
+Journal Page 2 is a thing in the North Servant Room.
 The description is "It's a journal page that looked like it was torn out carelessly. Something tells you that there's more than one lying around this ship."
-The printing of the Journal Page 1 is "Page 1 reads: 'We won the battle against the wizards!'"
+The printing of the Journal Page 2 is "Page 2 reads: 'We won the battle against the wizards!'"
 
 [Make the North Servant Room door]
 The North Servant Room Door is a door.
 The North Servant Room Door is south of the North Servant Room and north of the Lounge.
 
-[Make the South Servant Room]
-The South Servant Room is a room.
+[Make the East Servant Room]
+The East Servant Room is a room.
 "You walk into the room lined with a handful of beds. There is no one around."
 Beds are scenery in the lounge.
 
-Journal Page 2 is a thing in the South Servant Room.
+Journal Page 3 is a thing in the East Servant Room.
 The description is "It's a journal page that looked like it was torn out carelessly. Something tells you that there's more than one lying around this ship."
-The printing of the Journal Page 2 is "Page 2 reads: 'We lost many in the battle.'"
+The printing of the Journal Page 3 is "Page 23reads: 'We lost many in the battle.'"
 
 [Make the East Servant Room door]
 The East Servant Room Door is a door.
@@ -128,6 +128,27 @@ The Exit Room is a room.
 "You notice a door with a giant, golden lock in the small, empty room. There is no door handle. You cannot open it without the key."
 The Exit Room Door is a door.
 The Exit Room door is south of the Exit Room and north of the Hallway 1F.
+The Exit Room Door is locked.
+
+[
+After opening The Exit Room Door:
+	now the command prompt is "Say the password. >";
+	continue the action.
+	[check password]
+After reading a command when the command prompt is "Say the password. >":
+	increment the turn count;
+	if the player's command matches "time whale": 
+		now The Captain's Door is unlocked;
+		say "You hear a click inside the door, and it silently swings ajar.";
+		now the command prompt is ">";
+		reject the player's command;
+		now the Captain's Door is unlocked;
+	otherwise:
+		say "nothing happens";
+		now the command prompt is ">";
+		reject the player's command.
+	
+]
 
 [The second floor of the pirate ship]
 The East Hallway 2F is a room.
@@ -324,3 +345,6 @@ Check exiting:
 After reading a command when the player's command matches "waffle":
 	now the player has a waffle;
 	now the player is in the kitchen.
+After reading a command when the player's command matches "pancake":
+	now the player is in the Hallway 1F.
+
