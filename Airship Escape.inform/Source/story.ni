@@ -7,14 +7,25 @@
 A pirate is a person.
 The pirate captain is a person.
 
-[Define some spells]
-Casting is an action applying to nothing.
-Understand "cast" as casting.
-Understand "cast spell" as casting.
-Understand "chant" as casting.
+Rule for implicitly taking something (called target):
+	try silently taking the target;
+	if the player carries the target, say "You pick up [the target] first."
+	
+A lightable is a kind of thing.
+Lighting is an action applying to one carried thing.
+Understand "light [thing]" as lighting.
+Understand "cast fire on [thing]" as lighting.
 
-Report casting:
-	say "You cast a spell. It does nothing."
+Check lighting:
+	unless the noun is lightable, say "You consider lighting the [noun] but realize that it would be silly to do so.".
+
+Carry out lighting:
+	Carry out lighting the noun: now the noun is lit;
+	say "You hold your hand out in a fist, then open it slowly. Your hand warms up as a dancing ball of flame forms above your palm. With a gentle flick of your wrist, the flames fly out of your hand and to the [noun]. Now it is on fire."
+		
+
+
+
 
 [The first floor of the pirate ship]
 The Jail is a room.
@@ -41,12 +52,21 @@ The matching key of the Jail Door is the silver key.
 
 [West Jail is the first puzzle sort of]
 The West Jail is a room.
-"You walk into another part of the jail and see a door from which light emanates. It's probably the way out. Where are the guards?"
+The description is "You see that there are no guards around. Now to escape!"
 The West Jail is west of the Jail.
-[The West Jail is dark.]
+The West Jail is dark.
+
+Rule for printing the description of a dark room:
+	say "You walk into another part of the jail. It's pitch black. You're sure you can light it up with fire." instead.
+
 A pot is in the West Jail.
 A pot is a container.
+A pot is closed and openable.
 A silver key is in the pot.
+
+There is a torch in the Jail.
+"You see a torch that looks lightable. You recall a fire spell that you learned when you first became a wizard."
+The torch is lightable.
 
 [This might affect other unlocks]
 After unlocking: say "The jail door opens. You can go north into the light."
@@ -57,10 +77,14 @@ The Hallway 1F is a room.
 
 [The lounge connects the servant rooms]
 The Lounge is a room.
-"It's a small area with two doors, one to the north and one to the east. There is a table in the middle of the room, on top of which lies a dirty tablecloth. There are wooden chairs scattered about the room and an uncomfortable-looking couch to the side."
+"It's a small area with two doors, one to the north and one to the east. There is a table in the middle of the room, on top of which lies a dirty tablecloth and an old photograph. There are wooden chairs scattered about the room and an uncomfortable-looking couch to the side."
 The table is scenery in the lounge.
 The tablecloth is scenery in the lounge.
 Wooden chairs are scenery in the lounge.
+The photograph is in the lounge.
+
+Instead of examining the photograph:
+	say "It's a picture of the captain and a huge, golden key attached to his belt."
 
 [Make a lounge door]
 The Lounge Door is a door.
@@ -142,6 +166,8 @@ The Dining Area is a room.
 The Dining Area is north of the West Hallway 2F and west of the Kitchen.
 
 The Crew Quarters is a room.
+The note is in the Crew Quarters.
+The printing of the note is "time whale"
 
 The Captain's Room is a room.
 
@@ -166,7 +192,7 @@ After examining The Captain's Door:
 	[check password]
 After reading a command when the command prompt is "Say the password. >":
 	increment the turn count;
-	if the player's command matches "password": 
+	if the player's command matches "time whale": 
 		now The Captain's Door is unlocked;
 		say "You hear a click inside the door, and it silently swings ajar.";
 		now the command prompt is ">";
@@ -178,7 +204,7 @@ After reading a command when the command prompt is "Say the password. >":
 		reject the player's command.
 
 The Crew Quarters Door is a door.
-The Crew Quarters Door is locked.
+[The Crew Quarters Door is locked.]
 The Crew Quarters Door is north of The Crew Quarters and south of The West Hallway 2F.
 
 The Crew Quarters Key is a thing.
