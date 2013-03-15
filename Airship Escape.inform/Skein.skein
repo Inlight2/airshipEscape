@@ -15,7 +15,7 @@
   </item>
   <item nodeId="node-0x029DC7A0">
     <command xml:space="preserve">waffle</command>
-    <result xml:space="preserve">Kitchen&#x000A;You can see a Cook here.&#x000A;&#x000A;That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Kitchen&#x000A;The kitchen is warm and small, and there is a faint, pleasant aroma of waffles.&#x000A;&#x000A;You can see a Cook here.&#x000A;&#x000A;That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>

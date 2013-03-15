@@ -155,7 +155,7 @@ After reading a command when the command prompt is "Please enter your answer now
 
 [The second floor of the pirate ship]
 The East Hallway 2F is a room.
-"The hallway is decorated with a chocolate-colored wall and light brown polished floorboards that dully reflect the flourescent lights above you.".
+"The hallway is decorated with a chocolate-colored wall and light brown polished floorboards that dully reflect the flourescent lights above you. The kitchen is to the north and the bathroom is to the south".
 The walls are scenery in the East Hallway 2F.
 "These walls look almost edible."
 The floorboards are scenery in the East Hallway 2F.
@@ -164,7 +164,7 @@ The flourescent lights are scenery in the East Hallway 2F.
 "The flourescent lights are a lot brighter here than that little light in the jail, at least."
 
 The West Hallway 2F is a room.
-"The hallway is decorated with a chocolate-colored wall and light brown polished floorboards that dully reflect the flourescent lights above you.".
+"The hallway is decorated with a chocolate-colored wall and light brown polished floorboards that dully reflect the flourescent lights above you. The dining room is to the north, the crew quarters is to the south, and the captain's room is to the west.".
 The West Hallway 2F is west of the East Hallway 2F.
 The chocolate walls are scenery in the West Hallway 2F.
 "These walls look almost edible."
@@ -174,10 +174,12 @@ The bright flourescent lights are scenery in the West Hallway 2F.
 "The flourescent lights are a lot brighter here than that little light in the jail, at least."
 
 The Kitchen is a room.
+"The kitchen is warm and small, and there is a faint, pleasant aroma of waffles."
 
 The Kitchen is north of the East Hallway 2F.
 [waffle]
 The Waffle is a thing.
+The description of the waffle is "The waffle is still warm, cooked to a perfect golden brown color. Who or what WOULDN'T want to eat a waffle this good?"
 The Waffle is in the Kitchen.
 combinable of The waffle is true.
 
@@ -187,17 +189,20 @@ Instead of taking the waffle while the cook is in the kitchen:
 	stop the action.
 
 The Bathroom is a room.
+"It's a small bathroom. Your expectations of the cleanliness of the small bathroom on a giant pirate ship are met."
 The Bathroom is south of the East Hallway 2F.
-A toilet is a thing. "There is a wooden bench pushed up against the back wall.  This bench has a hole in it.  You can probably guess why".
+A toilet is a thing.  
+The description of the toilet is "There is a wooden bench pushed up against the back wall.  This bench has a hole in it.  You can probably guess why."
 A toilet is in the Bathroom.
 
-The hole is a thing. "you look down into the hole in the bench.   The smell alone almost makes you vomit.  You can't see anything, in the dark hole but it almost sounds like something is sloshing around in there."
+The hole is a thing. "You look down into the hole in the bench.   The smell alone almost makes you vomit.  You can't see anything in the dark hole, but it almost sounds like something is sloshing around in there."
 The hole is in the Bathroom.
 The hole is scenery.
 
 [monster in the bathroom]
-A monster in the toilet is a thing.  "You can't see anything in the dark hole.".
-A monster in the toilet is in the bathroom.
+The monster is a thing.  
+The description of the monster is "You can't see anything in the dark hole.".
+The monster is in the bathroom.
 
 The Dining Room is a room.
 The Dining Room is north of the West Hallway 2F and west of the Kitchen.
