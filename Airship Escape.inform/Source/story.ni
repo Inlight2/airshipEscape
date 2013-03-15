@@ -156,14 +156,25 @@ After reading a command when the command prompt is "Please enter your answer now
 [The second floor of the pirate ship]
 The East Hallway 2F is a room.
 "The hallway is decorated with a chocolate-colored wall and light brown polished floorboards that dully reflect the flourescent lights above you.".
-The wall is scenery.
-The floorboards are scenery.
-The flourescent lights are scenery.
+The walls are scenery in the East Hallway 2F.
+"These walls look almost edible."
+The floorboards are scenery in the East Hallway 2F.
+"On closer inspection, you conclude that these floorboards could use a bit of scrubbing."
+The flourescent lights are scenery in the East Hallway 2F.
+"The flourescent lights are a lot brighter here than that little light in the jail, at least."
 
 The West Hallway 2F is a room.
+"The hallway is decorated with a chocolate-colored wall and light brown polished floorboards that dully reflect the flourescent lights above you.".
 The West Hallway 2F is west of the East Hallway 2F.
+The chocolate walls are scenery in the West Hallway 2F.
+"These walls look almost edible."
+The brown floorboards are scenery in the West Hallway 2F.
+"On closer inspection, you conclude that these floorboards could use a bit of scrubbing."
+The bright flourescent lights are scenery in the West Hallway 2F.
+"The flourescent lights are a lot brighter here than that little light in the jail, at least."
 
 The Kitchen is a room.
+
 The Kitchen is north of the East Hallway 2F.
 [waffle]
 The Waffle is a thing.
@@ -172,7 +183,7 @@ combinable of The waffle is true.
 
 [can't grab the waffle when the cook is in the room]
 Instead of taking the waffle while the cook is in the kitchen:
-	say "You are about to get the waffle but realise that if you get any closer the cook will see you!  You're not";
+	say "You are about to get the waffle but realise that if you get any closer the cook will see you!  You're not"; [kenny you should finish this sentence]
 	stop the action.
 
 The Bathroom is a room.
