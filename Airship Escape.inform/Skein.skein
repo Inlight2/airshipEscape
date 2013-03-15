@@ -4,10 +4,10 @@
   <activeNode nodeId="node-0x028403F8"/>
   <item nodeId="node-0x028403F8">
     <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve">Airship Escape&#x000A;An Interactive Fiction by Jenny Tran, Kenneth Cox&#x000A;Release 1 / Serial number 130315 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD&#x000A;&#x000A;Jail&#x000A;The light above you is dim. Your jail cell is open. You can leave through the west doorway.&#x000A;&#x000A;There is an old man sitting on a wooden bench in a jail cell next to you.&#x000A;&#x000A;You see a torch that looks lightable. You recall a fire spell that you learned when you first became a wizard.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You wake up in a cold place. Your head hurts a little, but it seems like the pain is starting to fade away. You stretch, pick yourself up, and stumble slightly forward. You reach your hand out to grab something to balance yourself, and your hand touches cold, iron bars. That's when you realize it -- you're behind bars! &#x000A; "Ha ha, are you awake now? Welcome to the pirate ship, young man." &#x000A;You look up to see an old man sitting on a wooden bench in the jail cell next to you, but it's dim and you can't quite make out the expression on his face. You take a good look around. You're definitely in a jail cell. You regain your balance and straighten your robes. Ah that's right, you're a wizard. A wizard on what is, apparently, a pirate ship. Something tells you that it's time to make an escape.  &#x000A;&#x000A;Airship Escape&#x000A;An Interactive Fiction by Jenny Tran, Kenneth Cox&#x000A;Release 1 / Serial number 130315 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD&#x000A;&#x000A;Jail&#x000A;The light above you is dim. Your jail cell is open. You can leave through the west doorway.&#x000A;&#x000A;There is an old man sitting on a wooden bench in a jail cell next to you.&#x000A;&#x000A;You see a torch that looks lightable. You recall a fire spell that you learned when you first became a wizard.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">NO</temporary>
     <children>
       <child nodeId="node-0x0282C690"/>

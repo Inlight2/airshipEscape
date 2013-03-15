@@ -3,6 +3,12 @@
 [Use [bold type]word[roman type] to make words bolded.]
 [See http://inform7.com/learn/man/ex162.html for other font things]
 
+When play begins:
+	say "[bold type]You wake up in a cold place. Your head hurts a little, but it seems like the pain is starting to fade away. You stretch, pick yourself up, and stumble slightly forward. You reach your hand out to grab something to balance yourself, and your hand touches cold, iron bars. That's when you realize it -- you're behind bars! [line break] 'Ha ha, are you awake now? Welcome to the pirate ship, young man.' [line break]You look up to see an old man sitting on a wooden bench in the jail cell next to you, but it's dim and you can't quite make out the expression on his face. You take a good look around. You're definitely in a jail cell. You regain your balance and straighten your robes. Ah that's right, you're a wizard. A wizard on what is, apparently, a pirate ship. Something tells you that it's time to make an escape. [roman type] [line break]"
+	
+When the play ends:
+	say "[bold type] You hold your breath, close your eyes, then jump into the portal and end up in an alleyway, just a few feet above the ground. After a few seconds of suspense, gravity grabs you in its rather unforgiving clutches, and you fall to the ground. You stand up, your body still in slight pain, and stumble out of the alleyway into the busy streets of Waffle Town. No one seems to pay much attention to you as you brush the dirt off your clothes. Hesitating a bit, you look up into the vast, clear, blue sky and are only greeted by the bright sun. The pirate airship is nowhere in sight. You breath a sigh of relief, but feel a faint sense of pain mixed with anger in your chest. Yes, you've still got to avenge your comrades one day. But that's okay; you know by the time you're strong enough to avenge them, that airship will be unable to hide from your soon-to-be powerful magic. With a nod to yourself, you start to head towards the mage tower in the distance. [roman type] [line break]"
+
 Rule for implicitly taking something (called target):
 	try silently taking the target;
 	if the player carries the target, say "You pick up [the target] first."
@@ -34,11 +40,13 @@ Wooden bench is scenery in the Jail.
 Instead of telling the old man about something:
 	say "The old man says, 'Big deal.'".
 Instead of asking the old man about "exit": 
-	say "The old man says, 'If you want to get off the pirate ship, you'll have to leave through the exit door.'"
+	say "The old man says, 'If ya want to get off the pirate ship, yer gonna have to leave through the exit door.'"
 Instead of asking the old man about "journal page 1":
-	say "Oh yeah, that."
+	say "The old man says, 'Oh yeah, that.'"
+Instead of asking the old man about "golden key":
+	say "The old man says, 'Ah yes, the captain's golden key. That's how ya get out of this damn place. It's the key that opens the portal. Too bad he's always carryin[apostrophe] it with him. Maybe if ya can catch him asleep, ya can nab it and make a run fer it.'"
 Instead of asking the old man about something:
-	say "The old man says, 'I don't know what I can tell you.'"
+	say "The old man says, 'I don't know what I can tell ya.'"
 	
 [Make a locked jail door which requires a key from the west jail to open]
 The Jail Door is a door.
