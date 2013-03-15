@@ -116,7 +116,7 @@ Beds are scenery in the lounge.
 
 Journal Page 3 is a thing in the East Servant Room.
 The description is "It's a journal page that looked like it was torn out carelessly. Something tells you that there's more than one lying around this ship."
-The printing of the Journal Page 3 is "Page 23reads: 'We lost many in the battle.'"
+The printing of the Journal Page 3 is "Page 3 reads: 'We lost many in the battle.'"
 
 [Make the East Servant Room door]
 The East Servant Room Door is a door.
