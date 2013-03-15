@@ -12,7 +12,7 @@ Rule for implicitly taking something (called target):
 	if the player carries the target, say "You pick up [the target] first."
 	
 A lightable is a kind of thing.
-Lighting is an action applying to one carried thing.
+Lighting is an action applying to one thing.
 Understand "light [thing]" as lighting.
 Understand "cast fire on [thing]" as lighting.
 
@@ -65,7 +65,9 @@ There is a torch in the Jail.
 The torch is lightable.
 
 [This might affect other unlocks]
-After unlocking: say "The jail door opens. You can go north into the light.".
+After unlocking:
+	if the location of the player is the west jail:
+		say "The jail door opens. You can go north into the light.".
 
 [Make the first floor hallway]
 The Hallway 1F is a room.
@@ -158,8 +160,27 @@ The hole is scenery.
 A monster in the toilet is a thing.  "You can't see anything in the dark hole.".
 A monster in the toilet is in the bathroom.
 
-The Dining Area is a room.
-The Dining Area is north of the West Hallway 2F and west of the Kitchen.
+The Dining Room is a room.
+The Dining Room is north of the West Hallway 2F and west of the Kitchen.
+
+Check going from the Dining Room to West Hallway 2F:
+	if on fire of the table cloth is true:
+		say "As you leave, you can hear the cheff rushing in to try to put the fire out.";
+		now the cook is in the dining room.
+
+[table clothes +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++]
+Cloths are a kind of thing.
+Cloths has some truth state called on fire.
+The on fire of a Cloths is usually false.
+
+The table cloth is a Cloths.
+The dining table is a thing.
+The dining table is in the dining room.
+The table cloth is on the dining table.
+
+instead of lighting something while the noun is the table cloth:
+	say "You hold your hand out in a fist, then open it slowly. Your hand warms up as a dancing ball of flame forms above your palm. With a gentle flick of your wrist, the flames fly out of your hand and to the [noun]. Now it is on fire.";
+	now the on fire of the noun is true;
 
 The Crew Quarters is a room.
 The note is in the Crew Quarters.
@@ -200,7 +221,7 @@ After reading a command when the command prompt is "Say the password. >":
 		reject the player's command.
 
 The Crew Quarters Door is a door.
-[The Crew Quarters Door is locked.]
+The Crew Quarters Door is locked.
 The Crew Quarters Door is north of The Crew Quarters and south of The West Hallway 2F.
 
 The Crew Quarters Key is a thing.
