@@ -64,7 +64,6 @@ There is a torch in the Jail.
 "You see a torch that looks lightable. You recall a fire spell that you learned when you first became a wizard."
 The torch is lightable.
 
-[This might affect other unlocks]
 After unlocking:
 	if the location of the player is the west jail:
 		say "The jail door opens. You can go north into the light.".
@@ -130,25 +129,21 @@ The Exit Room Door is a door.
 The Exit Room door is south of the Exit Room and north of the Hallway 1F.
 The Exit Room Door is locked.
 
-[
-After opening The Exit Room Door:
-	now the command prompt is "Say the password. >";
-	continue the action.
-	[check password]
-After reading a command when the command prompt is "Say the password. >":
+		
+[Examining fixes the problem of it prompting for an answer after entering the exit room. What? :I ]
+After examining the Exit Room Door:
+		now the command prompt is "Please enter your answer now. >";
+		continue the action.
+After reading a command when the command prompt is "Please enter your answer now. >":
 	increment the turn count;
-	if the player's command matches "time whale": 
-		now The Captain's Door is unlocked;
-		say "You hear a click inside the door, and it silently swings ajar.";
+	if the player's command matches "test":
+		now the Exit Room Door is unlocked;
+		say "You unlocked the door.";
 		now the command prompt is ">";
-		reject the player's command;
-		now the Captain's Door is unlocked;
 	otherwise:
-		say "nothing happens";
-		now the command prompt is ">";
-		reject the player's command.
-	
-]
+		say "The door remains closed.";
+	reject the player's command.
+
 
 [The second floor of the pirate ship]
 The East Hallway 2F is a room.

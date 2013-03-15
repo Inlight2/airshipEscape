@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-0x02E36650" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x0248B8F0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7 for Windows</generator>
-  <activeNode nodeId="node-0x02E29EE0"/>
-  <item nodeId="node-0x02E36650">
+  <activeNode nodeId="node-0x0248B8F0"/>
+  <item nodeId="node-0x0248B8F0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">Airship Escape&#x000A;An Interactive Fiction by Jenny Tran, Kenneth Cox&#x000A;Release 1 / Serial number 130315 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD&#x000A;&#x000A;Jail&#x000A;The light above you is dim. Your jail cell is open. You can leave through the west doorway.&#x000A;&#x000A;There is an old man sitting on a wooden bench in a jail cell next to you.&#x000A;&#x000A;You see a torch that looks lightable. You recall a fire spell that you learned when you first became a wizard.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -10,12 +10,11 @@
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x02E366C0"/>
-      <child nodeId="node-0x02E37E68"/>
-      <child nodeId="node-0x02E29EE0"/>
+      <child nodeId="node-0x029AEC68"/>
+      <child nodeId="node-0x029DCD70"/>
     </children>
   </item>
-  <item nodeId="node-0x02E366C0">
+  <item nodeId="node-0x029AEC68">
     <command xml:space="preserve">waffle</command>
     <result xml:space="preserve">Kitchen&#x000A;You can see a Cook here.&#x000A;&#x000A;That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -23,10 +22,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E0DAC8"/>
+      <child nodeId="node-0x029DB710"/>
     </children>
   </item>
-  <item nodeId="node-0x02E0DAC8">
+  <item nodeId="node-0x029DB710">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">East Hallway 2F&#x000A;You can enter the elevator here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -34,11 +33,12 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E0DB38"/>
-      <child nodeId="node-0x02E37BC8"/>
+      <child nodeId="node-0x029C04E8"/>
+      <child nodeId="node-0x029DCAD0"/>
+      <child nodeId="node-0x02A193E8"/>
     </children>
   </item>
-  <item nodeId="node-0x02E0DB38">
+  <item nodeId="node-0x029C04E8">
     <command xml:space="preserve">enter elevator</command>
     <result xml:space="preserve">Elevator&#x000A;To operate: Press number.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -46,10 +46,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E0DC70"/>
+      <child nodeId="node-0x029C0620"/>
     </children>
   </item>
-  <item nodeId="node-0x02E0DC70">
+  <item nodeId="node-0x029C0620">
     <command xml:space="preserve">press 3</command>
     <result xml:space="preserve">You press button 3. The elevator whirs into action and moves to the correct level.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -57,10 +57,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E200B0"/>
+      <child nodeId="node-0x029ADBB0"/>
     </children>
   </item>
-  <item nodeId="node-0x02E200B0">
+  <item nodeId="node-0x029ADBB0">
     <command xml:space="preserve">exit</command>
     <result xml:space="preserve">deck&#x000A;The deck is the highest level of the ship.  All around you is space? or sky or something?  There are fishing poles on a rack.&#x000A;&#x000A;You can enter the elevator here.&#x000A;&#x000A;There is a fishing rod&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -68,10 +68,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E20120"/>
+      <child nodeId="node-0x029ADC20"/>
     </children>
   </item>
-  <item nodeId="node-0x02E20120">
+  <item nodeId="node-0x029ADC20">
     <command xml:space="preserve">get fishing rod</command>
     <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -79,10 +79,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E20190"/>
+      <child nodeId="node-0x029ADC90"/>
     </children>
   </item>
-  <item nodeId="node-0x02E20190">
+  <item nodeId="node-0x029ADC90">
     <command xml:space="preserve">enter elvator</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -90,10 +90,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E202C8"/>
+      <child nodeId="node-0x02481038"/>
     </children>
   </item>
-  <item nodeId="node-0x02E202C8">
+  <item nodeId="node-0x02481038">
     <command xml:space="preserve">press 2</command>
     <result xml:space="preserve">You cannot control the express panoramic elevator unless you are yourself inside.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -101,10 +101,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E36C90"/>
+      <child nodeId="node-0x02481120"/>
     </children>
   </item>
-  <item nodeId="node-0x02E36C90">
+  <item nodeId="node-0x02481120">
     <command xml:space="preserve">exit</command>
     <result xml:space="preserve">But you aren't in anything at the moment.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -112,10 +112,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E36D00"/>
+      <child nodeId="node-0x02481190"/>
     </children>
   </item>
-  <item nodeId="node-0x02E36D00">
+  <item nodeId="node-0x02481190">
     <command xml:space="preserve">combine</command>
     <result xml:space="preserve">What do you want to combine?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -123,10 +123,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E36E20"/>
+      <child nodeId="node-0x024812B0"/>
     </children>
   </item>
-  <item nodeId="node-0x02E36E20">
+  <item nodeId="node-0x024812B0">
     <command xml:space="preserve">combine fishing rod with waffle</command>
     <result xml:space="preserve">You combine Fishing Rod with the Waffle and produce a baited fishing rod&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -134,10 +134,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E36E90"/>
+      <child nodeId="node-0x02481320"/>
     </children>
   </item>
-  <item nodeId="node-0x02E36E90">
+  <item nodeId="node-0x02481320">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -145,10 +145,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E36F00"/>
+      <child nodeId="node-0x029DBE08"/>
     </children>
   </item>
-  <item nodeId="node-0x02E36F00">
+  <item nodeId="node-0x029DBE08">
     <command xml:space="preserve">enter elevattor</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -156,10 +156,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E36F88"/>
+      <child nodeId="node-0x029DBE90"/>
     </children>
   </item>
-  <item nodeId="node-0x02E36F88">
+  <item nodeId="node-0x029DBE90">
     <command xml:space="preserve">enter elevator</command>
     <result xml:space="preserve">Elevator&#x000A;To operate: Press number.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -167,10 +167,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E36FF8"/>
+      <child nodeId="node-0x029DBF00"/>
     </children>
   </item>
-  <item nodeId="node-0x02E36FF8">
+  <item nodeId="node-0x029DBF00">
     <command xml:space="preserve">press 2</command>
     <result xml:space="preserve">You press button 2. The elevator whirs into action and moves to the correct level.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -178,10 +178,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E37068"/>
+      <child nodeId="node-0x029DBF70"/>
     </children>
   </item>
-  <item nodeId="node-0x02E37068">
+  <item nodeId="node-0x029DBF70">
     <command xml:space="preserve">exit</command>
     <result xml:space="preserve">East Hallway 2F&#x000A;You can enter the elevator here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -189,10 +189,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E370D8"/>
+      <child nodeId="node-0x029DBFE0"/>
     </children>
   </item>
-  <item nodeId="node-0x02E370D8">
+  <item nodeId="node-0x029DBFE0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Bathroom&#x000A;There is a wooden bench pushed up against the back wall.  This bench has a hole in it.  You can probably guess why&#x000A;&#x000A;You can't see anything in the dark hole.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -200,10 +200,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E37148"/>
+      <child nodeId="node-0x029DC050"/>
     </children>
   </item>
-  <item nodeId="node-0x02E37148">
+  <item nodeId="node-0x029DC050">
     <command xml:space="preserve">fish</command>
     <result xml:space="preserve">(with Baited Fishing Rod)&#x000A;You cast the line into the toilet.  You can hear the creature moving through the filth towards the bait.  There a tug on the string and you real it in.  You now have a very stanky fish!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -211,10 +211,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E371B8"/>
+      <child nodeId="node-0x029DC0C0"/>
     </children>
   </item>
-  <item nodeId="node-0x02E371B8">
+  <item nodeId="node-0x029DC0C0">
     <command xml:space="preserve">inbentory</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -222,10 +222,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E37228"/>
+      <child nodeId="node-0x029DC130"/>
     </children>
   </item>
-  <item nodeId="node-0x02E37228">
+  <item nodeId="node-0x029DC130">
     <command xml:space="preserve">inventory</command>
     <result xml:space="preserve">You are carrying:&#x000A;  a Crew Quarters Key&#x000A;  Baited Fishing Rod&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -233,10 +233,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E37298"/>
+      <child nodeId="node-0x029DC1A0"/>
     </children>
   </item>
-  <item nodeId="node-0x02E37298">
+  <item nodeId="node-0x029DC1A0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">East Hallway 2F&#x000A;You can enter the elevator here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -244,10 +244,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E37308"/>
+      <child nodeId="node-0x029DC210"/>
     </children>
   </item>
-  <item nodeId="node-0x02E37308">
+  <item nodeId="node-0x029DC210">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">West Hallway 2F&#x000A;You can see a Crew Quarters Door here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -255,10 +255,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E37378"/>
+      <child nodeId="node-0x029DC280"/>
     </children>
   </item>
-  <item nodeId="node-0x02E37378">
+  <item nodeId="node-0x029DC280">
     <command xml:space="preserve">unlock crew</command>
     <result xml:space="preserve">What do you want to unlock the Crew Quarters Key with?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -266,10 +266,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E373E8"/>
+      <child nodeId="node-0x029DC2F0"/>
     </children>
   </item>
-  <item nodeId="node-0x02E373E8">
+  <item nodeId="node-0x029DC2F0">
     <command xml:space="preserve">unlock crew with key</command>
     <result xml:space="preserve">(the Crew Quarters Key with the Crew Quarters Key)&#x000A;That doesn't seem to be something you can unlock.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -277,10 +277,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E37458"/>
+      <child nodeId="node-0x029DC360"/>
     </children>
   </item>
-  <item nodeId="node-0x02E37458">
+  <item nodeId="node-0x029DC360">
     <command xml:space="preserve">unlock door with key</command>
     <result xml:space="preserve">(the Crew Quarters Door with the Crew Quarters Key)&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -288,10 +288,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E374C8"/>
+      <child nodeId="node-0x029DC3D0"/>
     </children>
   </item>
-  <item nodeId="node-0x02E374C8">
+  <item nodeId="node-0x029DC3D0">
     <command xml:space="preserve">open crew quarters door</command>
     <result xml:space="preserve">You open the Crew Quarters Door.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -299,10 +299,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E37538"/>
+      <child nodeId="node-0x029DC440"/>
     </children>
   </item>
-  <item nodeId="node-0x02E37538">
+  <item nodeId="node-0x029DC440">
     <command xml:space="preserve">location</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -310,10 +310,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E375A8"/>
+      <child nodeId="node-0x029DC4B0"/>
     </children>
   </item>
-  <item nodeId="node-0x02E375A8">
+  <item nodeId="node-0x029DC4B0">
     <command xml:space="preserve">x</command>
     <result xml:space="preserve">What do you want to examine?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -321,10 +321,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E37618"/>
+      <child nodeId="node-0x029DC520"/>
     </children>
   </item>
-  <item nodeId="node-0x02E37618">
+  <item nodeId="node-0x029DC520">
     <command xml:space="preserve">x room</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -332,10 +332,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E37688"/>
+      <child nodeId="node-0x029DC590"/>
     </children>
   </item>
-  <item nodeId="node-0x02E37688">
+  <item nodeId="node-0x029DC590">
     <command xml:space="preserve">x West hallway</command>
     <result xml:space="preserve">I only understood you as far as wanting to examine west.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -343,10 +343,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E376F8"/>
+      <child nodeId="node-0x029DC600"/>
     </children>
   </item>
-  <item nodeId="node-0x02E376F8">
+  <item nodeId="node-0x029DC600">
     <command xml:space="preserve">x west hallway</command>
     <result xml:space="preserve">I only understood you as far as wanting to examine west.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -354,10 +354,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E37768"/>
+      <child nodeId="node-0x029DC670"/>
     </children>
   </item>
-  <item nodeId="node-0x02E37768">
+  <item nodeId="node-0x029DC670">
     <command xml:space="preserve">x hallway</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -365,10 +365,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E377D8"/>
+      <child nodeId="node-0x029DC6E0"/>
     </children>
   </item>
-  <item nodeId="node-0x02E377D8">
+  <item nodeId="node-0x029DC6E0">
     <command xml:space="preserve">get note</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -376,10 +376,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E37848"/>
+      <child nodeId="node-0x029DC750"/>
     </children>
   </item>
-  <item nodeId="node-0x02E37848">
+  <item nodeId="node-0x029DC750">
     <command xml:space="preserve">x door</command>
     <result xml:space="preserve">(the Crew Quarters Door)&#x000A;You see nothing special about the Crew Quarters Door.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -387,10 +387,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E378B8"/>
+      <child nodeId="node-0x029DC7C0"/>
     </children>
   </item>
-  <item nodeId="node-0x02E378B8">
+  <item nodeId="node-0x029DC7C0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Crew Quarters&#x000A;You can see a Crew Quarters Door and a note here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -398,10 +398,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E37928"/>
+      <child nodeId="node-0x029DC830"/>
     </children>
   </item>
-  <item nodeId="node-0x02E37928">
+  <item nodeId="node-0x029DC830">
     <command xml:space="preserve">read note</command>
     <result xml:space="preserve">time whale&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -409,10 +409,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E37998"/>
+      <child nodeId="node-0x029DC8A0"/>
     </children>
   </item>
-  <item nodeId="node-0x02E37998">
+  <item nodeId="node-0x029DC8A0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">West Hallway 2F&#x000A;You can see a Crew Quarters Door here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -420,10 +420,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E37A08"/>
+      <child nodeId="node-0x029DC910"/>
     </children>
   </item>
-  <item nodeId="node-0x02E37A08">
+  <item nodeId="node-0x029DC910">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">(first opening the Captain's Door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -431,10 +431,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E37A78"/>
+      <child nodeId="node-0x029DC980"/>
     </children>
   </item>
-  <item nodeId="node-0x02E37A78">
+  <item nodeId="node-0x029DC980">
     <command xml:space="preserve">x captain</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -442,10 +442,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E37AE8"/>
+      <child nodeId="node-0x029DC9F0"/>
     </children>
   </item>
-  <item nodeId="node-0x02E37AE8">
+  <item nodeId="node-0x029DC9F0">
     <command xml:space="preserve">x captain's</command>
     <result xml:space="preserve">The captain's door has the word "Captain" writen across the top.  There is no door nob or key hole.  On a plaque on the door there is the message &#x000A; "Only those with the password may enter to speak to the captain."&#x000A;&#x000A;Say the password. &gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -453,10 +453,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E37B58"/>
+      <child nodeId="node-0x029DCA60"/>
     </children>
   </item>
-  <item nodeId="node-0x02E37B58">
+  <item nodeId="node-0x029DCA60">
     <command xml:space="preserve">time whale</command>
     <result xml:space="preserve">You hear a click inside the door, and it silently swings ajar.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -464,7 +464,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x02E37BC8">
+  <item nodeId="node-0x029DCAD0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">West Hallway 2F&#x000A;You can see a Crew Quarters Door here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -472,10 +472,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E37C38"/>
+      <child nodeId="node-0x029DCB40"/>
+      <child nodeId="node-0x029CED20"/>
     </children>
   </item>
-  <item nodeId="node-0x02E37C38">
+  <item nodeId="node-0x029DCB40">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Dining Room&#x000A;You can see a dining table (on which is a table cloth) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -483,10 +484,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E37D18"/>
+      <child nodeId="node-0x029DCC20"/>
     </children>
   </item>
-  <item nodeId="node-0x02E37D18">
+  <item nodeId="node-0x029DCC20">
     <command xml:space="preserve">cast fire on the table cloth</command>
     <result xml:space="preserve">You pick up the table cloth first.&#x000A;&#x000A;lols&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -494,10 +495,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E37D88"/>
+      <child nodeId="node-0x029DCC90"/>
     </children>
   </item>
-  <item nodeId="node-0x02E37D88">
+  <item nodeId="node-0x029DCC90">
     <command xml:space="preserve">showme</command>
     <result xml:space="preserve">Dining Room - room&#x000A;    yourself - person&#x000A;        table cloth&#x000A;        Waffle&#x000A;    dining table - supporter&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -505,10 +506,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E37DF8"/>
+      <child nodeId="node-0x029DCD00"/>
     </children>
   </item>
-  <item nodeId="node-0x02E37DF8">
+  <item nodeId="node-0x029DCD00">
     <command xml:space="preserve">showme table cloth</command>
     <result xml:space="preserve">table cloth - thing&#x000A;location: carried by yourself in the Dining Room&#x000A;singular-named, improper-named; unlit, inedible, portable, handled&#x000A;printed name: "table cloth"&#x000A;printed plural name: none&#x000A;indefinite article: none&#x000A;description: none&#x000A;initial appearance: none&#x000A;printing: "blank"&#x000A;combinable: false&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -516,51 +517,43 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x02E37E68">
-    <command xml:space="preserve">waffles</command>
-    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02E37ED8"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02E37ED8">
-    <command xml:space="preserve">waffle</command>
-    <result xml:space="preserve">Kitchen&#x000A;You can see a Cook here.&#x000A;&#x000A;That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02E29770"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02E29770">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">East Hallway 2F&#x000A;You can enter the elevator here.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02E297E0"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02E297E0">
+  <item nodeId="node-0x029CED20">
     <command xml:space="preserve">w</command>
-    <result xml:space="preserve">West Hallway 2F&#x000A;You can see a Crew Quarters Door here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">(first opening the Captain's Door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E29850"/>
+      <child nodeId="node-0x029CED90"/>
     </children>
   </item>
-  <item nodeId="node-0x02E29850">
+  <item nodeId="node-0x029CED90">
+    <command xml:space="preserve">x captain's door</command>
+    <result xml:space="preserve">The captain's door has the word "Captain" writen across the top.  There is no door nob or key hole.  On a plaque on the door there is the message &#x000A; "Only those with the password may enter to speak to the captain."&#x000A;&#x000A;Say the password. &gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x029CEE00"/>
+    </children>
+  </item>
+  <item nodeId="node-0x029CEE00">
+    <command xml:space="preserve">time whale</command>
+    <result xml:space="preserve">You hear a click inside the door, and it silently swings ajar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x029CEE70"/>
+      <child nodeId="node-0x02A28D00"/>
+      <child nodeId="node-0x02A40DF8"/>
+      <child nodeId="node-0x02A41418"/>
+    </children>
+  </item>
+  <item nodeId="node-0x029CEE70">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Dining Room&#x000A;You can see a dining table (on which is a table cloth) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -568,64 +561,536 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E298C0"/>
+      <child nodeId="node-0x029CEEE0"/>
     </children>
   </item>
-  <item nodeId="node-0x02E298C0">
-    <command xml:space="preserve">cast fire</command>
-    <result xml:space="preserve">(on the Waffle)&#x000A;You consider lighting the Waffle but realize that it would be silly to do so.&#x000A;&#x000A;You hold your hand out in a fist, then open it slowly. Your hand warms up as a dancing ball of flame forms above your palm. With a gentle flick of your wrist, the flames fly out of your hand and to the Waffle. Now it is on fire.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02E29930"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02E29930">
-    <command xml:space="preserve">cast fire</command>
-    <result xml:space="preserve">(on the Waffle)&#x000A;You consider lighting the Waffle but realize that it would be silly to do so.&#x000A;&#x000A;You hold your hand out in a fist, then open it slowly. Your hand warms up as a dancing ball of flame forms above your palm. With a gentle flick of your wrist, the flames fly out of your hand and to the Waffle. Now it is on fire.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02E299A0"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02E299A0">
-    <command xml:space="preserve">cast fire on the table cloth</command>
-    <result xml:space="preserve">You hold your hand out in a fist, then open it slowly. Your hand warms up as a dancing ball of flame forms above your palm. With a gentle flick of your wrist, the flames fly out of your hand and to the table cloth. Now it is on fire.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02E29A10"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02E29A10">
+  <item nodeId="node-0x029CEEE0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">West Hallway 2F&#x000A;You can see a Crew Quarters Door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x029CEF50"/>
+    </children>
+  </item>
+  <item nodeId="node-0x029CEF50">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">(first opening the Captain's Door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A18E38"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A18E38">
+    <command xml:space="preserve">x captain's door</command>
+    <result xml:space="preserve">The captain's door has the word "Captain" writen across the top.  There is no door nob or key hole.  On a plaque on the door there is the message &#x000A; "Only those with the password may enter to speak to the captain."&#x000A;&#x000A;Say the password. &gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A18EA8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A18EA8">
+    <command xml:space="preserve">time whale</command>
+    <result xml:space="preserve">You hear a click inside the door, and it silently swings ajar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A18F18"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A18F18">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">(first opening the Captain's Door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A19068"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A19068">
+    <command xml:space="preserve">x captain's door</command>
+    <result xml:space="preserve">The captain's door has the word "Captain" writen across the top.  There is no door nob or key hole.  On a plaque on the door there is the message &#x000A; "Only those with the password may enter to speak to the captain."&#x000A;&#x000A;Say the password. &gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A18FF8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A18FF8">
+    <command xml:space="preserve">time whale</command>
+    <result xml:space="preserve">You hear a click inside the door, and it silently swings ajar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A18F88"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A18F88">
+    <command xml:space="preserve">enter captain's room</command>
+    <result xml:space="preserve">I only understood you as far as wanting to enter the Captain's Door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A190D8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A190D8">
+    <command xml:space="preserve">enter the captain's room</command>
+    <result xml:space="preserve">I only understood you as far as wanting to enter the Captain's Door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A19148"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A19148">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">(first opening the Captain's Door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A191B8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A191B8">
+    <command xml:space="preserve">pancake</command>
+    <result xml:space="preserve">Hallway 1F&#x000A;A hallway stretches out before you. The walls are plain, the lights are dim, and there are rooms all along the hallway. The jail rooms are in the south. A room labeled the "Exit Room" is to the north. You see a plain door leading to the lounge to the east.&#x000A;&#x000A;You can enter the elevator here.&#x000A;&#x000A;You can also see an Exit Room Door, a Lounge Door and a Jail Door here.&#x000A;&#x000A;That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A19228"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A19228">
+    <command xml:space="preserve">open exit room door</command>
+    <result xml:space="preserve">You open the Exit Room Door.&#x000A;&#x000A;Say the password. &gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A19298"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A19298">
+    <command xml:space="preserve">time whale</command>
+    <result xml:space="preserve">You hear a click inside the door, and it silently swings ajar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A19308"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A19308">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Exit Room&#x000A;You notice a door with a giant, golden lock in the small, empty room. There is no door handle. You cannot open it without the key.&#x000A;&#x000A;You can see an Exit Room Door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A28D00">
+    <command xml:space="preserve">frenchtoast</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A28C90"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A28C90">
+    <command xml:space="preserve">x captain's door</command>
+    <result xml:space="preserve">The captain's door has the word "Captain" writen across the top.  There is no door nob or key hole.  On a plaque on the door there is the message &#x000A; "Only those with the password may enter to speak to the captain."&#x000A;&#x000A;Say the password. &gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A28EC0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A28EC0">
+    <command xml:space="preserve">frenchtoast</command>
+    <result xml:space="preserve">You hear a click inside the door, and it silently swings ajar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A28F30"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A28F30">
+    <command xml:space="preserve">pancake</command>
+    <result xml:space="preserve">Hallway 1F&#x000A;A hallway stretches out before you. The walls are plain, the lights are dim, and there are rooms all along the hallway. The jail rooms are in the south. A room labeled the "Exit Room" is to the north. You see a plain door leading to the lounge to the east.&#x000A;&#x000A;You can enter the elevator here.&#x000A;&#x000A;You can also see an Exit Room Door, a Lounge Door and a Jail Door here.&#x000A;&#x000A;That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A28FA0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A28FA0">
+    <command xml:space="preserve">open exit room door</command>
+    <result xml:space="preserve">You open the Exit Room Door.&#x000A;&#x000A;Say the password. &gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A29010"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A29010">
+    <command xml:space="preserve">time whale</command>
+    <result xml:space="preserve">nothing happens&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A29080"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A29080">
+    <command xml:space="preserve">open exit room door</command>
+    <result xml:space="preserve">That's already open.&#x000A;&#x000A;Say the password. &gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A29160"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A29160">
+    <command xml:space="preserve">frenchtoast</command>
+    <result xml:space="preserve">You hear a click inside the door, and it silently swings ajar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A291D0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A291D0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Exit Room&#x000A;You notice a door with a giant, golden lock in the small, empty room. There is no door handle. You cannot open it without the key.&#x000A;&#x000A;You can see an Exit Room Door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A40DF8">
+    <command xml:space="preserve">x captain's door</command>
+    <result xml:space="preserve">The captain's door has the word "Captain" writen across the top.  There is no door nob or key hole.  On a plaque on the door there is the message &#x000A; "Only those with the password may enter to speak to the captain."&#x000A;&#x000A;Say the password. &gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A40E68"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A40E68">
+    <command xml:space="preserve">frenchtoast</command>
+    <result xml:space="preserve">You hear a click inside the door, and it silently swings ajar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A40ED8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A40ED8">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">(first opening the Captain's Door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A40FB8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A40FB8">
+    <command xml:space="preserve">pancake</command>
+    <result xml:space="preserve">Hallway 1F&#x000A;A hallway stretches out before you. The walls are plain, the lights are dim, and there are rooms all along the hallway. The jail rooms are in the south. A room labeled the "Exit Room" is to the north. You see a plain door leading to the lounge to the east.&#x000A;&#x000A;You can enter the elevator here.&#x000A;&#x000A;You can also see an Exit Room Door, a Lounge Door and a Jail Door here.&#x000A;&#x000A;That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A41028"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A41028">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">(first opening the Exit Room Door)&#x000A;&#x000A;Exit Room&#x000A;You notice a door with a giant, golden lock in the small, empty room. There is no door handle. You cannot open it without the key.&#x000A;&#x000A;You can see an Exit Room Door here.&#x000A;&#x000A;Say the password. &gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A41098"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A41098">
+    <command xml:space="preserve">frenchtoast</command>
+    <result xml:space="preserve">You hear a click inside the door, and it silently swings ajar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A41108"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A41108">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A41178"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A41178">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Hallway 1F&#x000A;A hallway stretches out before you. The walls are plain, the lights are dim, and there are rooms all along the hallway. The jail rooms are in the south. A room labeled the "Exit Room" is to the north. You see a plain door leading to the lounge to the east.&#x000A;&#x000A;You can enter the elevator here.&#x000A;&#x000A;You can also see an Exit Room Door, a Lounge Door and a Jail Door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A411E8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A411E8">
+    <command xml:space="preserve">lock exit room door</command>
+    <result xml:space="preserve">(with the Waffle)&#x000A;First you'll have to close the Exit Room Door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A41258"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A41258">
+    <command xml:space="preserve">close exit room door</command>
+    <result xml:space="preserve">You close the Exit Room Door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A412C8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A412C8">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a Waffle&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A41338"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A41338">
+    <command xml:space="preserve">lock exit room door</command>
+    <result xml:space="preserve">(with the Waffle)&#x000A;That doesn't seem to fit the lock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A41418">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">(first opening the Captain's Door)&#x000A;&#x000A;Captain's Room&#x000A;You can see a Captiain here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A419C8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A419C8">
+    <command xml:space="preserve">pancake</command>
+    <result xml:space="preserve">Hallway 1F&#x000A;A hallway stretches out before you. The walls are plain, the lights are dim, and there are rooms all along the hallway. The jail rooms are in the south. A room labeled the "Exit Room" is to the north. You see a plain door leading to the lounge to the east.&#x000A;&#x000A;You can enter the elevator here.&#x000A;&#x000A;You can also see an Exit Room Door, a Lounge Door and a Jail Door here.&#x000A;&#x000A;That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A41A38"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A41A38">
+    <command xml:space="preserve">x exit room door</command>
+    <result xml:space="preserve">You see nothing special about the Exit Room Door.&#x000A;&#x000A;Please enter your answer now. &gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A41AA8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A41AA8">
+    <command xml:space="preserve">test</command>
+    <result xml:space="preserve">You unlocked the door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A5A948"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A5A948">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">(first opening the Exit Room Door)&#x000A;&#x000A;Exit Room&#x000A;You notice a door with a giant, golden lock in the small, empty room. There is no door handle. You cannot open it without the key.&#x000A;&#x000A;You can see an Exit Room Door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A193E8">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A19458"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A19458">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">West Hallway 2F&#x000A;You can see a Crew Quarters Door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A194C8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A194C8">
+    <command xml:space="preserve">x captain's door</command>
+    <result xml:space="preserve">The captain's door has the word "Captain" writen across the top.  There is no door nob or key hole.  On a plaque on the door there is the message &#x000A; "Only those with the password may enter to speak to the captain."&#x000A;&#x000A;Say the password. &gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A19538"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A19538">
+    <command xml:space="preserve">time whale</command>
+    <result xml:space="preserve">You hear a click inside the door, and it silently swings ajar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A195A8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A195A8">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">(first opening the Captain's Door)&#x000A;&#x000A;Captain's Room&#x000A;You can see a Captiain here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02E29A80"/>
+      <child nodeId="node-0x02A28AD0"/>
     </children>
   </item>
-  <item nodeId="node-0x02E29A80">
+  <item nodeId="node-0x02A28AD0">
+    <command xml:space="preserve">pancake</command>
+    <result xml:space="preserve">Hallway 1F&#x000A;A hallway stretches out before you. The walls are plain, the lights are dim, and there are rooms all along the hallway. The jail rooms are in the south. A room labeled the "Exit Room" is to the north. You see a plain door leading to the lounge to the east.&#x000A;&#x000A;You can enter the elevator here.&#x000A;&#x000A;You can also see an Exit Room Door, a Lounge Door and a Jail Door here.&#x000A;&#x000A;That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A28A60"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A28A60">
+    <command xml:space="preserve">open exit room door</command>
+    <result xml:space="preserve">It seems to be locked.&#x000A;&#x000A;Say the password. &gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A28BB0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A28BB0">
+    <command xml:space="preserve">time whale</command>
+    <result xml:space="preserve">You hear a click inside the door, and it silently swings ajar.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A28C20"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A28C20">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Dining Room&#x000A;You can see a Cook and a dining table (on which is a table cloth) here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">(first opening the Exit Room Door)&#x000A;It seems to be locked.&#x000A;&#x000A;Say the password. &gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x02E29EE0">
-    <command xml:space="preserve">pancake</command>
-    <result xml:space="preserve">Hallway 1F&#x000A;A hallway stretches out before you. The walls are plain, the lights are dim, and there are rooms all along the hallway. The jail rooms are in the south. A room labeled the "Exit Room" is to the north. You see a plain door leading to the lounge to the east.&#x000A;&#x000A;You can enter the elevator here.&#x000A;&#x000A;You can also see an Exit Room Door, a Lounge Door and a Jail Door here.&#x000A;&#x000A;That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-0x029DCD70">
+    <command xml:space="preserve">waffles</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
