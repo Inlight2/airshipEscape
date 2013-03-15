@@ -185,7 +185,7 @@ combinable of The waffle is true.
 
 [can't grab the waffle when the cook is in the room]
 Instead of taking the waffle while the cook is in the kitchen:
-	say "You are about to get the waffle but realise that if you get any closer the cook will see you!  You're not"; [kenny you should finish this sentence]
+	say "You are about to get the waffle but realise that if you get any closer the cook will see you!  You're not going back to prison for a waffle!";
 	stop the action.
 
 The Bathroom is a room.
@@ -209,7 +209,7 @@ The Dining Room is north of the West Hallway 2F and west of the Kitchen.
 
 Check going from the Dining Room to West Hallway 2F:
 	if on fire of the table cloth is true:
-		say "As you leave, you can hear the cheff rushing in to try to put the fire out.";
+		say "As you leave, you can hear the chef rushing in to try to put the fire out.";
 		now the cook is in the dining room.
 
 [table clothes +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++]
