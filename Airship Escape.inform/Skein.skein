@@ -26,10 +26,10 @@
   </item>
   <item nodeId="node-0x029DC890">
     <command xml:space="preserve">s</command>
-    <result xml:space="preserve">East Hallway 2F&#x000A;The hallway is decorated with a chocolate-colored wall and light brown polished floorboards that dully reflect the flourescent lights above you.&#x000A;&#x000A;You can enter the elevator here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">East Hallway 2F&#x000A;The hallway is decorated with a chocolate-colored wall and light brown polished floorboards that dully reflect the flourescent lights above you. The kitchen is to the north and the bathroom is to the south&#x000A;&#x000A;You can enter the elevator here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-0x029DC900"/>
