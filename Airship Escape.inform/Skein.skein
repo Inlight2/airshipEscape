@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-0x023AB800" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x0255FD60" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7 for Windows</generator>
-  <activeNode nodeId="node-0x023AB800"/>
-  <item nodeId="node-0x023AB800">
+  <activeNode nodeId="node-0x08B1DF88"/>
+  <item nodeId="node-0x0255FD60">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">Airship Escape&#x000A;An Interactive Fiction by Jenny Tran, Kenneth Cox&#x000A;Release 1 / Serial number 130314 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD&#x000A;&#x000A;Jail&#x000A;The light above you is dim. Your jail cell is open. You can leave through the west doorway.&#x000A;&#x000A;There is an old man sitting on a wooden bench in a jail cell next to you.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -10,10 +10,12 @@
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x02EF02A8"/>
+      <child nodeId="node-0x0255FDD0"/>
+      <child nodeId="node-0x02769090"/>
+      <child nodeId="node-0x02769100"/>
     </children>
   </item>
-  <item nodeId="node-0x02EF02A8">
+  <item nodeId="node-0x0255FDD0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">West Jail&#x000A;You walk into another part of the jail and see a door from which light emanates. It's probably the way out. Where are the guards?&#x000A;&#x000A;You can see a Jail Door and a pot (in which is a silver key) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -21,11 +23,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02EF0158"/>
-      <child nodeId="node-0x02EF0778"/>
+      <child nodeId="node-0x0255FE40"/>
+      <child nodeId="node-0x02768A00"/>
     </children>
   </item>
-  <item nodeId="node-0x02EF0158">
+  <item nodeId="node-0x0255FE40">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">(first opening the Jail Door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -33,10 +35,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02EF0238"/>
+      <child nodeId="node-0x02551188"/>
     </children>
   </item>
-  <item nodeId="node-0x02EF0238">
+  <item nodeId="node-0x02551188">
     <command xml:space="preserve">enter elevator</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -44,10 +46,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02EF0318"/>
+      <child nodeId="node-0x02551228"/>
     </children>
   </item>
-  <item nodeId="node-0x02EF0318">
+  <item nodeId="node-0x02551228">
     <command xml:space="preserve">get key</command>
     <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -55,10 +57,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02EF0388"/>
+      <child nodeId="node-0x025512C8"/>
     </children>
   </item>
-  <item nodeId="node-0x02EF0388">
+  <item nodeId="node-0x025512C8">
     <command xml:space="preserve">open dooor</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -66,10 +68,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02EF03F8"/>
+      <child nodeId="node-0x027508A0"/>
     </children>
   </item>
-  <item nodeId="node-0x02EF03F8">
+  <item nodeId="node-0x027508A0">
     <command xml:space="preserve">open door</command>
     <result xml:space="preserve">It seems to be locked.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -77,10 +79,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02EF0468"/>
+      <child nodeId="node-0x027509C8"/>
     </children>
   </item>
-  <item nodeId="node-0x02EF0468">
+  <item nodeId="node-0x027509C8">
     <command xml:space="preserve">unlock door</command>
     <result xml:space="preserve">(with the silver key)&#x000A;The jail door opens. You can go north into the light.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -88,10 +90,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02EF04D8"/>
+      <child nodeId="node-0x02750A38"/>
     </children>
   </item>
-  <item nodeId="node-0x02EF04D8">
+  <item nodeId="node-0x02750A38">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">(first opening the Jail Door)&#x000A;&#x000A;Hallway 1F&#x000A;A hallway stretches out before you. The walls are plain, the lights are dim, and there are rooms all along the hallway. The jail rooms are in the south. A room labeled the "Exit Room" is to the north. You see a plain door leading to the lounge to the east.&#x000A;&#x000A;You can enter the elevator here.&#x000A;&#x000A;You can also see an Exit Room Door, a Lounge Door and a Jail Door here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -99,10 +101,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02EF0548"/>
+      <child nodeId="node-0x02750AA8"/>
     </children>
   </item>
-  <item nodeId="node-0x02EF0548">
+  <item nodeId="node-0x02750AA8">
     <command xml:space="preserve">enter elevator</command>
     <result xml:space="preserve">Elevator&#x000A;To operate: Press number.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -110,10 +112,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02EF05B8"/>
+      <child nodeId="node-0x02768328"/>
     </children>
   </item>
-  <item nodeId="node-0x02EF05B8">
+  <item nodeId="node-0x02768328">
     <command xml:space="preserve">press 2</command>
     <result xml:space="preserve">You press button 2. The elevator whirs into action and moves to the correct level.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -121,10 +123,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02EF0628"/>
+      <child nodeId="node-0x02768418"/>
     </children>
   </item>
-  <item nodeId="node-0x02EF0628">
+  <item nodeId="node-0x02768418">
     <command xml:space="preserve">exit</command>
     <result xml:space="preserve">East Hallway 2F&#x000A;You can enter the elevator here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -132,10 +134,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02EF0698"/>
+      <child nodeId="node-0x02768508"/>
     </children>
   </item>
-  <item nodeId="node-0x02EF0698">
+  <item nodeId="node-0x02768508">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">Kitchen&#x000A;You can see a Waffle and a Cook here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -143,10 +145,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02EF0708"/>
+      <child nodeId="node-0x02768578"/>
     </children>
   </item>
-  <item nodeId="node-0x02EF0708">
+  <item nodeId="node-0x02768578">
     <command xml:space="preserve">get waffle</command>
     <result xml:space="preserve">The cook will catch you!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -154,7 +156,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
-  <item nodeId="node-0x02EF0778">
+  <item nodeId="node-0x02768A00">
     <command xml:space="preserve">get key</command>
     <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -162,10 +164,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02EF07E8"/>
+      <child nodeId="node-0x02768A70"/>
     </children>
   </item>
-  <item nodeId="node-0x02EF07E8">
+  <item nodeId="node-0x02768A70">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">(first opening the Jail Door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -173,10 +175,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02F14A00"/>
+      <child nodeId="node-0x02768AE0"/>
     </children>
   </item>
-  <item nodeId="node-0x02F14A00">
+  <item nodeId="node-0x02768AE0">
     <command xml:space="preserve">unlock</command>
     <result xml:space="preserve">(the silver key with the silver key)&#x000A;That doesn't seem to be something you can unlock.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -184,10 +186,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02F14A70"/>
+      <child nodeId="node-0x02768B50"/>
     </children>
   </item>
-  <item nodeId="node-0x02F14A70">
+  <item nodeId="node-0x02768B50">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">(first opening the Jail Door)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -195,10 +197,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02F14AE0"/>
+      <child nodeId="node-0x02768BC0"/>
     </children>
   </item>
-  <item nodeId="node-0x02F14AE0">
+  <item nodeId="node-0x02768BC0">
     <command xml:space="preserve">unlock the jail</command>
     <result xml:space="preserve">(with the silver key)&#x000A;The jail door opens. You can go north into the light.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -206,10 +208,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02F14B50"/>
+      <child nodeId="node-0x02768C30"/>
     </children>
   </item>
-  <item nodeId="node-0x02F14B50">
+  <item nodeId="node-0x02768C30">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">(first opening the Jail Door)&#x000A;&#x000A;Hallway 1F&#x000A;A hallway stretches out before you. The walls are plain, the lights are dim, and there are rooms all along the hallway. The jail rooms are in the south. A room labeled the "Exit Room" is to the north. You see a plain door leading to the lounge to the east.&#x000A;&#x000A;You can enter the elevator here.&#x000A;&#x000A;You can also see an Exit Room Door, a Lounge Door and a Jail Door here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -217,10 +219,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02F14BC0"/>
+      <child nodeId="node-0x02768CA0"/>
     </children>
   </item>
-  <item nodeId="node-0x02F14BC0">
+  <item nodeId="node-0x02768CA0">
     <command xml:space="preserve">enter elevator</command>
     <result xml:space="preserve">Elevator&#x000A;To operate: Press number.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -228,10 +230,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02F14C30"/>
+      <child nodeId="node-0x02768D10"/>
     </children>
   </item>
-  <item nodeId="node-0x02F14C30">
+  <item nodeId="node-0x02768D10">
     <command xml:space="preserve">press 2</command>
     <result xml:space="preserve">You press button 2. The elevator whirs into action and moves to the correct level.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -239,10 +241,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02F14CA0"/>
+      <child nodeId="node-0x02768D80"/>
     </children>
   </item>
-  <item nodeId="node-0x02F14CA0">
+  <item nodeId="node-0x02768D80">
     <command xml:space="preserve">exit</command>
     <result xml:space="preserve">East Hallway 2F&#x000A;You can enter the elevator here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -250,10 +252,10 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02F14D10"/>
+      <child nodeId="node-0x02768DF0"/>
     </children>
   </item>
-  <item nodeId="node-0x02F14D10">
+  <item nodeId="node-0x02768DF0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Bathroom&#x000A;you look down into the hole in the floor.   The smell alone almost makes you vomit.  You can't see anything, in the dark hole but it almost sounds like something is sloshing around in there.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -261,10 +263,10 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02F14D80"/>
+      <child nodeId="node-0x02768E60"/>
     </children>
   </item>
-  <item nodeId="node-0x02F14D80">
+  <item nodeId="node-0x02768E60">
     <command xml:space="preserve">x</command>
     <result xml:space="preserve">(the silver key)&#x000A;You see nothing special about the silver key.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -272,15 +274,196 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02F14DF0"/>
+      <child nodeId="node-0x02768ED0"/>
     </children>
   </item>
-  <item nodeId="node-0x02F14DF0">
+  <item nodeId="node-0x02768ED0">
     <command xml:space="preserve">x monster in the toilet</command>
     <result xml:space="preserve">You see nothing special about the monster in the toilet.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02769090">
+    <command xml:space="preserve">fish</command>
+    <result xml:space="preserve">(with the old man)&#x000A;there is no where to fish here&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02769100">
+    <command xml:space="preserve">waffle</command>
+    <result xml:space="preserve">Kitchen&#x000A;You can see a Cook here.&#x000A;&#x000A;That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02769020"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02769020">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a Waffle&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x08B1D9D8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x08B1D9D8">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">East Hallway 2F&#x000A;You can enter the elevator here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x08B1DA48"/>
+    </children>
+  </item>
+  <item nodeId="node-0x08B1DA48">
+    <command xml:space="preserve">enter elevator</command>
+    <result xml:space="preserve">Elevator&#x000A;To operate: Press number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x08B1DAB8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x08B1DAB8">
+    <command xml:space="preserve">press 3</command>
+    <result xml:space="preserve">You press button 3. The elevator whirs into action and moves to the correct level.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x08B1DB28"/>
+    </children>
+  </item>
+  <item nodeId="node-0x08B1DB28">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">deck&#x000A;The deck is the highest level of the ship.  All around you is space? or sky or something?  There are fishing poles on a rack.&#x000A;&#x000A;You can enter the elevator here.&#x000A;&#x000A;There is a fishing rod&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x08B1DB98"/>
+    </children>
+  </item>
+  <item nodeId="node-0x08B1DB98">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x08B1DC08"/>
+    </children>
+  </item>
+  <item nodeId="node-0x08B1DC08">
+    <command xml:space="preserve">take fishing rod</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x08B1DC78"/>
+    </children>
+  </item>
+  <item nodeId="node-0x08B1DC78">
+    <command xml:space="preserve">combine fishing rod and waffle</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x08B1DCE8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x08B1DCE8">
+    <command xml:space="preserve">combine fishing rod with waffle</command>
+    <result xml:space="preserve">You combine Fishing Rod with the Waffle and produce a baited fishing rod&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x08B1DE38"/>
+    </children>
+  </item>
+  <item nodeId="node-0x08B1DE38">
+    <command xml:space="preserve">enter elevator</command>
+    <result xml:space="preserve">Elevator&#x000A;To operate: Press number.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x08B1DDC8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x08B1DDC8">
+    <command xml:space="preserve">press 2</command>
+    <result xml:space="preserve">You press button 2. The elevator whirs into action and moves to the correct level.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x08B1DD58"/>
+    </children>
+  </item>
+  <item nodeId="node-0x08B1DD58">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">East Hallway 2F&#x000A;You can enter the elevator here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x08B1DEA8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x08B1DEA8">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Bathroom&#x000A;There is a wooden bench pushed up against the back wall.  This bench has a hole in it.  You can probably guess why&#x000A;&#x000A;You can't see anything in the dark hole.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x08B1DF18"/>
+    </children>
+  </item>
+  <item nodeId="node-0x08B1DF18">
+    <command xml:space="preserve">fish</command>
+    <result xml:space="preserve">(with Baited Fishing Rod)&#x000A;You cast the line into the toilet.  You can hear the creature moving through the filth towards the bait.  There a tug on the string and you real it in.  You now have a very stanky fish!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x08B1DF88"/>
+    </children>
+  </item>
+  <item nodeId="node-0x08B1DF88">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a Crew Quarters Key&#x000A;  Baited Fishing Rod&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
 </Skein>
