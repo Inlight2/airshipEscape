@@ -6,7 +6,7 @@
 When play begins:
 	say "[bold type]You wake up in a cold place. Your head hurts a little, but it seems like the pain is starting to fade away. You stretch, pick yourself up, and stumble slightly forward. You reach your hand out to grab something to balance yourself, and your hand touches cold, iron bars. That's when you realize it -- you're behind bars! [line break] 'Ha ha, are you awake now? Welcome to the pirate ship, young man.' [line break]You look up to see an old man sitting on a wooden bench in the jail cell next to you, but it's dim and you can't quite make out the expression on his face. You take a good look around. You're definitely in a jail cell. You regain your balance and straighten your robes. Ah that's right, you're a wizard. A wizard on what is, apparently, a pirate ship. Something tells you that it's time to make an escape. [roman type] [line break]"
 	
-When the play ends:
+When play ends:
 	say "[bold type] You hold your breath, close your eyes, then jump into the portal and end up in an alleyway, just a few feet above the ground. After a few seconds of suspense, gravity grabs you in its rather unforgiving clutches, and you fall to the ground. You stand up, your body still in slight pain, and stumble out of the alleyway into the busy streets of Waffle Town. No one seems to pay much attention to you as you brush the dirt off your clothes. Hesitating a bit, you look up into the vast, clear, blue sky and are only greeted by the bright sun. The pirate airship is nowhere in sight. You breath a sigh of relief, but feel a faint sense of pain mixed with anger in your chest. Yes, you've still got to avenge your comrades one day. But that's okay; you know by the time you're strong enough to avenge them, that airship will be unable to hide from your soon-to-be powerful magic. With a nod to yourself, you start to head towards the mage tower in the distance. [roman type] [line break]"
 
 Rule for implicitly taking something (called target):
@@ -155,6 +155,10 @@ After reading a command when the command prompt is "Please enter your answer now
 
 [The second floor of the pirate ship]
 The East Hallway 2F is a room.
+"The hallway is decorated with a chocolate-colored wall and light brown polished floorboards that dully reflect the flourescent lights above you.".
+The wall is scenery.
+The floorboards are scenery.
+The flourescent lights are scenery.
 
 The West Hallway 2F is a room.
 The West Hallway 2F is west of the East Hallway 2F.
