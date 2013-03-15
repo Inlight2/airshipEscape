@@ -81,7 +81,7 @@ Wooden chairs are scenery in the lounge.
 The photograph is in the lounge.
 
 Instead of examining the photograph:
-	say "It's a picture of the captain and a huge, golden key attached to his belt."
+	say "It's a picture of the captain and a huge, [bold type]golden key[roman type] attached to his belt."
 
 [Make a lounge door]
 The Lounge Door is a door.
