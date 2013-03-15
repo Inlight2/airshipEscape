@@ -82,9 +82,8 @@ The Hallway 1F is a room.
 
 [The lounge connects the servant rooms]
 The Lounge is a room.
-"It's a small area with two doors, one to the north and one to the east. There is a table in the middle of the room, on top of which lies a dirty tablecloth and an old photograph. There are wooden chairs scattered about the room and an uncomfortable-looking couch to the side."
+"It's a small area with two doors, one to the north and one to the east. There is a table in the middle of the room, on top of which lies an old photograph. There are wooden chairs scattered about the room and an uncomfortable-looking couch to the side."
 The table is scenery in the lounge.
-The tablecloth is scenery in the lounge.
 Wooden chairs are scenery in the lounge.
 The photograph is in the lounge.
 
@@ -205,11 +204,14 @@ The description of the monster is "You can't see anything in the dark hole.".
 The monster is in the bathroom.
 
 The Dining Room is a room.
+"There is a table in the middle of the room with chairs neatly pushed in along the sides of the table. At the end of the table is a bigger chair with a more elaborate backrest."
+The table is scenery.
+"The tablecloth on this table is plain and white. You think you can set it on fire."
 The Dining Room is north of the West Hallway 2F and west of the Kitchen.
 
 Check going from the Dining Room to West Hallway 2F:
-	if on fire of the table cloth is true:
-		say "As you leave, you can hear the chef rushing in to try to put the fire out.";
+	if on fire of the tablecloth is true:
+		say "As you leave, you can hear the cook rushing in to try to put the fire out.";
 		now the cook is in the dining room.
 
 [table clothes +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++]
@@ -217,12 +219,12 @@ Cloths are a kind of thing.
 Cloths has some truth state called on fire.
 The on fire of a Cloths is usually false.
 
-The table cloth is a Cloths.
+The tablecloth is a Cloths.
 The dining table is a thing.
 The dining table is in the dining room.
-The table cloth is on the dining table.
+The tablecloth is on the dining table.
 
-instead of lighting something while the noun is the table cloth:
+instead of lighting something while the noun is the tablecloth:
 	say "You hold your hand out in a fist, then open it slowly. Your hand warms up as a dancing ball of flame forms above your palm. With a gentle flick of your wrist, the flames fly out of your hand and to the [noun]. Now it is on fire.";
 	now the on fire of the noun is true;
 
