@@ -79,13 +79,15 @@ After unlocking:
 
 [Make the first floor hallway]
 The Hallway 1F is a room.
-"A hallway stretches out before you. The walls are plain, the lights are dim, and there are rooms all along the hallway. The jail rooms are in the south. A room labeled the 'Exit Room' is to the north. You see a plain door leading to the lounge to the east.".
+"A hallway stretches out before you. The walls are plain, the lights are dim, and there are rooms all along the hallway. The jail rooms are in the south. You notice that the Exit Room Door north of you has strange, glowing patterns that form no particular pattern. You see a plain door leading to the lounge to the east.".
 
 [The lounge connects the servant rooms]
 The Lounge is a room.
 "It's a small area with two doors, one to the north and one to the east. There is a table in the middle of the room, on top of which lies an old photograph. There are wooden chairs scattered about the room and an uncomfortable-looking couch to the side."
 The table is scenery in the lounge.
-Wooden chairs are scenery in the lounge.
+"The table is chipped and scratched and looks like it needs some scrubbing down."
+The old couch is scenery in the lounge.
+"You don't think you want to sit on that couch."
 The photograph is in the lounge.
 
 Instead of examining the photograph:
@@ -93,6 +95,7 @@ Instead of examining the photograph:
 
 [Make a lounge door]
 The Lounge Door is a door.
+"This door leads to the servant's lounge."
 The Lounge Door is east of the Hallway 1F and west of the Lounge.
 
 [Make the North Servant Room]
@@ -134,24 +137,27 @@ The East Servant Room Door is east of the Lounge and west of the South Servant R
 The Exit Room is a room.
 "You notice a door with a giant, golden lock in the small, empty room. There is no door handle. You cannot open it without the key."
 The Exit Room Door is a door.
+The description is "Upon closer examination, the bright blue lines form into the shape of a mouth which suddenly grins widely at you. [line break] 'Ha ha ha, if you want to get through this door, you'll have to solve my riddle! What is greater than God and more evil than the Devil? The poor have it, the rich need it, and if you eat it you'll die.'"
 The Exit Room door is south of the Exit Room and north of the Hallway 1F.
 The Exit Room Door is locked.
 
 		
-[Examining fixes the problem of it prompting for an answer after entering the exit room. What? :I ]
-After examining the Exit Room Door:
-		now the command prompt is "Please enter your answer now. >";
-		continue the action.
-After reading a command when the command prompt is "Please enter your answer now. >":
+[door password]
+After examining The Exit Room Door while the Exit Room Door is locked:
+	now the command prompt is "The answer to the riddle is >";
+	continue the action.
+	[check password]
+After reading a command when the command prompt is "The answer to the riddle is >":
 	increment the turn count;
-	if the player's command matches "test":
-		now the Exit Room Door is unlocked;
-		say "You unlocked the door.";
+	if the player's command matches "nothing": 
+		now The Exit Room Door is unlocked;
+		say "The mouth shrieks in laughter as the lines forming it suddenly return to their normal state and the door clicks open.";
 		now the command prompt is ">";
+		reject the player's command;
 	otherwise:
-		say "The door remains closed.";
-	reject the player's command.
-
+		say "The mouth giggles at you. 'Nope! Wrong!' Perhaps the old man knows the answer?";
+		now the command prompt is ">";
+		reject the player's command.
 
 [The second floor of the pirate ship]
 The East Hallway 2F is a room.
@@ -215,14 +221,14 @@ The monster is scenery.
 
 The Dining Room is a room.
 "There is a table in the middle of the room with chairs neatly pushed in along the sides of the table. At the end of the table is a bigger chair with a more elaborate backrest."
-The table is scenery.
-"The tablecloth on this table is plain and white. You think you can set it on fire."
+The chairs are scenery in the dining room.
+The description is "There is nothing special about these chairs, though you notice they don't quite match the table. It bothers you ever so slightly."
 The Dining Room is north of the West Hallway 2F and west of the Kitchen.
 
 Check going from the Dining Room to West Hallway 2F:
 	if on fire of the tablecloth is true:
 		say "As you leave, you can hear the cook rushing in to try to put the fire out.";
-		now the description of the tablecloth is "The magic flames have engolfed the table cloth and even though the cook is trying his best to put them out, they persist.";
+		now the description of the tablecloth is "The magic flames have engulfed the table cloth and even though the cook is trying his best to put them out, they persist.";
 		now the description of the cook is "The cook is furiously trying to put out the flames, though due to the magical nature of the flames";
 		now the cook is in the dining room.
 
@@ -233,8 +239,10 @@ The on fire of a Cloth is usually false.
 
 The tablecloth is a Cloth.
 The dining table is a thing.
+The description is "The dining table is long and elegant looking for furniture on a pirate ship. Maybe they stole it from someone?"
 The dining table is in the dining room.
 The tablecloth is on the dining table.
+The description is "The tablecloth on this table is plain and white. It looks pretty flammable, but are you sure you really want to burn it?"
 
 instead of lighting something while the noun is the tablecloth:
 	say "You hold your hand out in a fist, then open it slowly. Your hand warms up as a dancing ball of flame forms above your palm. With a gentle flick of your wrist, the flames fly out of your hand and to the [noun]. Now it is on fire.";
@@ -242,18 +250,27 @@ instead of lighting something while the noun is the tablecloth:
 	now the description of the tablecloth is "you can feel the warmth of the flames as they spread across the table cloth".
 
 The Crew Quarters is a room.
+"There are sort of clean beds here, though no attempt has been made to fold the sheets neatly."
+Beds are scenery in the Crew Quarters.
+"These beds don't look that comfortable to sleep in."
 The note is in the Crew Quarters.
 The printing of the note is "time whale"
 
-The Captain's Room is a room. "The Captain is fast asleep in his bed at the far end of the room.   That key has to be around here somewhere.".
+The Captain's Room is a room. "The Captain is fast asleep in his bed at the far end of the room. That golden key has to be around here somewhere.".
 
 [thigngs in the caotains room]
-A Desk is in the Captain's Room. "A desk that the Captain uses for looking at his many maps no doubt."
+A Desk is in the Captain's Room. "There are maps scattered all over the desk with a compass on top of them."
 The Desk is a container.
 The Desk is closed.
 The Desk is fixed in place.
 The Desk is not portable.
 The Desk is openable.
+
+The maps are scenery in the Captain's Room.
+"There are some marks and x's here and there."
+
+The compass is scenery in the Captain's Room.
+"The red arrow on the compass is moving slightly."
 
 A Closet is in the Captain's Room. "looks like a closet for clothes or something."
 The Closet is a container.
@@ -319,7 +336,6 @@ After reading a command when the command prompt is "Say the password. >":
 		say "You hear a click inside the door, and it silently swings ajar.";
 		now the command prompt is ">";
 		reject the player's command;
-		now the Captain's Door is unlocked;
 	otherwise:
 		say "nothing happens";
 		now the command prompt is ">";
@@ -433,3 +449,5 @@ After reading a command when the player's command matches "pancake":
 	now the player is in the Hallway 1F.
 After reading a command when the player's command matches "captain":
 	now the player is in the Captain's Room.
+After reading a command when the player's command matches "pew":
+	now the player is in the Crew Quarters.
