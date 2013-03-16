@@ -1,18 +1,18 @@
 ! Blurb file created by Inform build 6G60
 
-status "C:\Program Files (x86)\Inform 7\Inform7\Extensions\Reserved\CblorbModel.html" "C:\Users\Owner\Documents\GitHub\airshipEscape\Airship Escape.inform\Build\StatusCblorb.html"
+status "C:\Program Files (x86)\Inform 7\Inform7\Extensions\Reserved\CblorbModel.html" "C:\Users\Kenneth\Documents\Inform\Projects\airshipEscape\Airship Escape.inform\Build\StatusCblorb.html"
 
 
 ! Identification
 
-project folder "C:\Users\Owner\Documents\GitHub\airshipEscape\Airship Escape.inform"
-release to "C:\Users\Owner\Documents\GitHub\airshipEscape\Airship Escape Materials\Release"
+project folder "C:\Users\Kenneth\Documents\Inform\Projects\airshipEscape\Airship Escape.inform"
+release to "C:\Users\Kenneth\Documents\Inform\Projects\airshipEscape\Airship Escape Materials\Release"
 
 ! Blorb instructions
 
 storyfile leafname "Airship Escape.zblorb"
-storyfile "C:\Users\Owner\Documents\GitHub\airshipEscape\Airship Escape.inform\Build\output.z5" include
-ifiction "C:\Users\Owner\Documents\GitHub\airshipEscape\Airship Escape.inform\Metadata.iFiction" include
+storyfile "C:\Users\Kenneth\Documents\Inform\Projects\airshipEscape\Airship Escape.inform\Build\output.z5" include
+ifiction "C:\Users\Kenneth\Documents\Inform\Projects\airshipEscape\Airship Escape.inform\Metadata.iFiction" include
 cover "C:\Program Files (x86)\Inform 7\Inform7\Extensions\Reserved\DefaultCover.jpg"
 picture 1 "C:\Program Files (x86)\Inform 7\Inform7\Extensions\Reserved\DefaultCover.jpg"
 

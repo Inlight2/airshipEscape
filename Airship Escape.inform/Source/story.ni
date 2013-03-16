@@ -46,6 +46,16 @@ Instead of asking the old man about "journal":
 	say "The old man says, 'I'd imagine that there are journals all about the ship left by the crew.  Don't know why you'de be interested in those though.'"
 Instead of asking the old man about "golden key":
 	say "The old man says, 'Ah yes, the captain's golden key. That's how ya get out of this damn place. It's the key that opens the portal. Too bad he's always carryin[apostrophe] it with him. Maybe if ya can catch him asleep, ya can nab it and make a run fer it.'"
+Instead of asking the old man about "bathroom":
+	say "The old man says, 'HAH, why do you want to know about the bathroom?  Oh now I remember there's a horrible monster living in there!  I've even heard that some of the crew have lost posessions to that thing!'".
+Instead of asking the old man about "monster":
+	say "The old man says, 'Aye, there's a terrible monster living in the bathroom of this ship.  I've heard that sometimes the crew lose things to it from time to time.  I bet if you coudl fish that thing up you would get something for your trouble!'"
+Instead of asking the old man about "password":
+	say "The old man says, 'The captain keeps his door locked with a special password, I don't know what it is.  But maybe, some of the crew have written it down to help them remember.'".
+Instead of asking the old man about "riddle":
+	say "The old man says, 'Hmm, that's a tough one, I'm afraid I don't know the answer.'".
+Instead of asking the old man about "elevator":
+	say "The old man says, 'Once you are in the elevator you can just [bold type] press a number [roman type] and off you go.  When the elevators done moving all the have to do is [bold type] exit [bold type] the elevator.' ".
 Instead of asking the old man about something:
 	say "The old man says, 'I don't know what I can tell ya.'"
 	
@@ -140,6 +150,13 @@ The Exit Room Door is a door.
 The description is "Upon closer examination, the bright blue lines form into the shape of a mouth which suddenly grins widely at you. [line break] 'Ha ha ha, if you want to get through this door, you'll have to solve my riddle! What is greater than God and more evil than the Devil? The poor have it, the rich need it, and if you eat it you'll die.'"
 The Exit Room door is south of the Exit Room and north of the Hallway 1F.
 The Exit Room Door is locked.
+
+After going to Exit Room:
+	if the player has a golden key:
+		end the story finally saying "fin";
+		stop the action;
+	otherwise:
+		continue the action.
 
 		
 [door password]
@@ -251,7 +268,7 @@ instead of lighting something while the noun is the tablecloth:
 
 The Crew Quarters is a room.
 "There are sort of clean beds here, though no attempt has been made to fold the sheets neatly."
-Beds are scenery in the Crew Quarters.
+Beds2 are scenery in the Crew Quarters.
 "These beds don't look that comfortable to sleep in."
 The note is in the Crew Quarters.
 The printing of the note is "time whale"
@@ -308,6 +325,10 @@ After examining the Captain:
 	If the sleepy of the Captain is true:
 		say "He is fast asleep".
 The Golden Key is a thing.
+Instead of taking the golden key:
+	say "Key taken";
+	now the player has the golden key.
+
 The Belt Pouch is a thing.
 The Belt Pouch is wearable.
 The Belt Pouch is a container.
@@ -350,6 +371,9 @@ The Crew Quarters Key unlocks The Crew Quarters Door.
 
 [The deck of the pirate ship]
 The deck is a room. "The deck is the highest level of the ship.  All around you is space? or sky or something?  There are fishing poles on a rack."
+The Sky is a thing. "As you look at into the horizon, with a lound boom, a whale suddenly appears along side the deck. "
+The Sky is in the Deck.
+The Sky is scenery.
 
 [fishing pole]
 Fishing Rod is a thing. "There is a fishing rod".
