@@ -19,7 +19,8 @@ Understand "light [thing]" as lighting.
 Understand "cast fire on [thing]" as lighting.
 
 Check lighting:
-	unless the noun is lightable, say "You consider lighting the [noun] but realize that it would be dangerous to do so."
+	unless the noun is lightable, say "You consider lighting the [noun] but realize that it would be dangerous to do so.";
+	stop the action.
 	
 Check lighting:
 	unless the noun is not lightable, say "You hold your hand out in a fist, then open it slowly. Your hand warms up as a dancing ball of flame forms above your palm. With a gentle flick of your wrist, the flames fly out of your hand and to the [noun]. Now it is on fire.";
@@ -40,9 +41,9 @@ Wooden bench is scenery in the Jail.
 Instead of telling the old man about something:
 	say "The old man says, 'Big deal.'".
 Instead of asking the old man about "exit": 
-	say "The old man says, 'If ya want to get off the pirate ship, yer gonna have to leave through the exit door.'"
-Instead of asking the old man about "journal page 1":
-	say "The old man says, 'Oh yeah, that.'"
+	say "The old man says, 'If ya want to get off the pirate ship, yer gonna have to leave through the exit door. Which is locked, and only the captain can open it.'"
+Instead of asking the old man about "journal":
+	say "The old man says, 'I'd imagine that there are journals all about the ship left by the crew.  Don't know why you'de be interested in those though.'"
 Instead of asking the old man about "golden key":
 	say "The old man says, 'Ah yes, the captain's golden key. That's how ya get out of this damn place. It's the key that opens the portal. Too bad he's always carryin[apostrophe] it with him. Maybe if ya can catch him asleep, ya can nab it and make a run fer it.'"
 Instead of asking the old man about something:
@@ -210,6 +211,7 @@ The hole is scenery.
 The monster is a thing.  
 The description of the monster is "You can't see anything in the dark hole.".
 The monster is in the bathroom.
+The monster is scenery.
 
 The Dining Room is a room.
 "There is a table in the middle of the room with chairs neatly pushed in along the sides of the table. At the end of the table is a bigger chair with a more elaborate backrest."
