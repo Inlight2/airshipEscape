@@ -51,6 +51,7 @@ Instead of asking the old man about something:
 	
 [Make a locked jail door which requires a key from the west jail to open]
 The Jail Door is a door.
+"The Jail Door is between the Jail and the Hallway 1F."
 The Jail Door is locked.
 The Jail Door is north of the West Jail and south of the Hallway 1F.
 The matching key of the Jail Door is the silver key.
@@ -65,9 +66,11 @@ Rule for printing the description of a dark room:
 	say "You walk into another part of the jail. It's pitch black. You're sure you can light it up with fire." instead.
 
 A pot is in the West Jail.
+"An ordinary clay pot."
 A pot is a container.
 A pot is closed and openable.
 A silver key is in the pot.
+The description of the silver key is "A small silver key that shines in the light."
 
 There is a torch in the Jail.
 "You see a torch that looks lightable. You recall a fire spell that you learned when you first became a wizard."
@@ -95,13 +98,14 @@ Instead of examining the photograph:
 
 [Make a lounge door]
 The Lounge Door is a door.
-"This door leads to the servant's lounge."
+"This door is between the Lounge and the Hallway 1F."
 The Lounge Door is east of the Hallway 1F and west of the Lounge.
 
 [Make the North Servant Room]
 The North Servant Room is a room.
 "You walk into the room lined with a handful of beds. There is no one around."
-Beds are scenery in the lounge.
+Beds are scenery in the North Servant Room.
+"These beds look old and uncomfortable."
 
 [Logic for reading]
 A thing has some text called printing.
@@ -118,12 +122,14 @@ The printing of the Journal Page 2 is "Page 2 reads: 'We won the battle against 
 
 [Make the North Servant Room door]
 The North Servant Room Door is a door.
+"This door connects the North Servant Room and the Lounge."
 The North Servant Room Door is south of the North Servant Room and north of the Lounge.
 
 [Make the East Servant Room]
 The East Servant Room is a room.
 "You walk into the room lined with a handful of beds. There is no one around."
-Beds are scenery in the lounge.
+Beds3 are scenery in the East Servant Room.
+"These beds look old and uncomfortable."
 
 Journal Page 3 is a thing in the East Servant Room.
 The description is "It's a journal page that looked like it was torn out carelessly. Something tells you that there's more than one lying around this ship."
@@ -131,11 +137,12 @@ The printing of the Journal Page 3 is "Page 3 reads: 'We lost many in the battle
 
 [Make the East Servant Room door]
 The East Servant Room Door is a door.
+"This door lies between the East Servant Room and the Lounge."
 The East Servant Room Door is east of the Lounge and west of the South Servant Room.
 
 [Make the Exit Room and door]
 The Exit Room is a room.
-"You notice a door with a giant, golden lock in the small, empty room. There is no door handle. You cannot open it without the key."
+"You notice a door with a giant, golden lock in the small, empty room. There is no door handle. You cannot open it without the key. You also notice that there is a symbol on the door that looks like an eye."
 The Exit Room Door is a door.
 The description is "Upon closer examination, the bright blue lines form into the shape of a mouth which suddenly grins widely at you. [line break] 'Ha ha ha, if you want to get through this door, you'll have to solve my riddle! What is greater than God and more evil than the Devil? The poor have it, the rich need it, and if you eat it you'll die.'"
 The Exit Room door is south of the Exit Room and north of the Hallway 1F.
@@ -251,10 +258,10 @@ instead of lighting something while the noun is the tablecloth:
 
 The Crew Quarters is a room.
 "There are sort of clean beds here, though no attempt has been made to fold the sheets neatly."
-Beds are scenery in the Crew Quarters.
+Beds2 are scenery in the Crew Quarters.
 "These beds don't look that comfortable to sleep in."
 The note is in the Crew Quarters.
-The printing of the note is "time whale"
+The printing of the note is "all hail [bold type]time whale[roman type]"
 
 The Captain's Room is a room. "The Captain is fast asleep in his bed at the far end of the room. That golden key has to be around here somewhere.".
 
@@ -272,7 +279,7 @@ The maps are scenery in the Captain's Room.
 The compass is scenery in the Captain's Room.
 "The red arrow on the compass is moving slightly."
 
-A Closet is in the Captain's Room. "looks like a closet for clothes or something."
+A Closet is in the Captain's Room. "You only see coats and pants that all look rather similar."
 The Closet is a container.
 The Closet is closed.
 The Closet is fixed in place.
@@ -288,10 +295,11 @@ Scrolls are a thing.
 Scrolls are in the chest.
 Scorlls are portable.
 Instead of taking Scrolls:
-	say "You don't need these, plus shouldn't you be worried about finding the key before the captain wakes up!?";
+	say "You don't need these. Rather, instead of looking at these scrolls, shouldn't you be worried about finding the key before the captain wakes up!?";
 	stop the action.
 
 A Chair is a thing.
+"A very fancy looking chair, just like the one in the dining room. This one is a lot bigger, however, and very cushioned."
 A Chair is in the Captain's Room.
 The Chair is a supporter.
 
@@ -308,7 +316,9 @@ After examining the Captain:
 	If the sleepy of the Captain is true:
 		say "He is fast asleep".
 The Golden Key is a thing.
+The description is "The key is larger than most keys you've come across and has a strange looking eye on it. The symbol matches the symbol on the door in the Exit Room."
 The Belt Pouch is a thing.
+The description is "A plain, leather pouch attached to the captain's belt."
 The Belt Pouch is wearable.
 The Belt Pouch is a container.
 The Belt Pouch is open.
@@ -316,7 +326,7 @@ The Golden Key is in the Belt Pouch.
 The Captain is wearing the Belt Pouch.
 
 The Cook is a man.
-The Cook is in the kitchen
+The Cook is in the kitchen.
 
 [Doors for the 2nd floor]
 The Captain's Door is a door."The captain's door has the word 'Captain' writen across the top.  There is no door nob or key hole.  On a plaque on the door there is the message [line break] 'Only those with the password may enter to speak to the captain.'"
@@ -337,26 +347,30 @@ After reading a command when the command prompt is "Say the password. >":
 		now the command prompt is ">";
 		reject the player's command;
 	otherwise:
-		say "nothing happens";
+		say "You stare at the door for a while but decide that it's not going to open for you. Must have been the wrong password.";
 		now the command prompt is ">";
 		reject the player's command.
 
 The Crew Quarters Door is a door.
+"It's the door between the Crew Quarters and the West Hallway 2F."
 The Crew Quarters Door is locked.
 The Crew Quarters Door is north of The Crew Quarters and south of The West Hallway 2F.
 
 The Crew Quarters Key is a thing.
+"It's a small key that has the letters 'CQ' on it."
 The Crew Quarters Key unlocks The Crew Quarters Door.
 
 [The deck of the pirate ship]
 The deck is a room. "The deck is the highest level of the ship.  All around you is space? or sky or something?  There are fishing poles on a rack."
 
 [fishing pole]
-Fishing Rod is a thing. "There is a fishing rod".
+Fishing Rod is a thing.
+The description is "It's an iron fishing rod sitting out on the deck. Someone must have been fishing recently."
 Fishing Rod are in the Deck.
 Combinable of Fishing Rod is true.
 
-Baited Fishing Rod is a thing. "The fishing rod now has some bait on the hook.  Lets get fishing!".
+Baited Fishing Rod is a thing. 
+The description is "The fishing rod now has some bait on the hook.  Lets get fishing!".
 
 [logic for combining the fishing rod with the bait]
 A thing has some truth state called combinable.  The combinable of a thing is usually false.
@@ -364,13 +378,13 @@ Combining is an action applying to two things.
 Understand "combine [something] with [something]" as Combining.
 Understand "combine [something] and [something]" as Combining.
 Check Combining when the combinable of the noun is false:
-	instead say "cannot combine.";
+	instead say "You can't combine that.";
 	stop the action.
 Check Combining when the combinable of the second noun is false:
-	instead say "cannot combine.";
+	instead say "You can't combine that.";
 	stop the action.
 Check Combining when the noun is the second noun:
-	instead say "you cannot combine the same object to itself";
+	instead say "You cannot combine the same object to itself.";
 	stop the action.
 	
 Report Combining something:
