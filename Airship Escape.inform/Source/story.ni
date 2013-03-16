@@ -18,13 +18,13 @@ Lighting is an action applying to one thing.
 Understand "light [thing]" as lighting.
 Understand "cast fire on [thing]" as lighting.
 
-Check lighting:
-	unless the noun is lightable, say "You consider lighting the [noun] but realize that it would be dangerous to do so.";
-	stop the action.
-	
-Check lighting:
-	unless the noun is not lightable, say "You hold your hand out in a fist, then open it slowly. Your hand warms up as a dancing ball of flame forms above your palm. With a gentle flick of your wrist, the flames fly out of your hand and to the [noun]. Now it is on fire.";
-	now the noun is lit.
+Check lighting something:
+	if the noun is not lightable:
+		say "You consider lighting the [noun] but realize that it would be dangerous to do so.";
+		stop the action;
+	otherwise:
+		say "You hold your hand out in a fist, then open it slowly. Your hand warms up as a dancing ball of flame forms above your palm. With a gentle flick of your wrist, the flames fly out of your hand and to the [noun]. Now it is on fire.";
+		now the noun is lit.
 
 [The first floor of the pirate ship]
 The Jail is a room.
@@ -61,7 +61,6 @@ Instead of asking the old man about something:
 	
 [Make a locked jail door which requires a key from the west jail to open]
 The Jail Door is a door.
-"The Jail Door is between the Jail and the Hallway 1F."
 The Jail Door is locked.
 The Jail Door is north of the West Jail and south of the Hallway 1F.
 The matching key of the Jail Door is the silver key.
@@ -112,7 +111,6 @@ Instead of examining the photograph:
 
 [Make a lounge door]
 The Lounge Door is a door.
-"This door is between the Lounge and the Hallway 1F."
 The Lounge Door is east of the Hallway 1F and west of the Lounge.
 
 [Make the North Servant Room]
@@ -151,7 +149,6 @@ The printing of the Journal Page 3 is "Page 3 reads: 'All the wizards from the l
 
 [Make the East Servant Room door]
 The East Servant Room Door is a door.
-"This door lies between the East Servant Room and the Lounge."
 The East Servant Room Door is east of the Lounge and west of the South Servant Room.
 
 [Make the Exit Room and door]
@@ -254,11 +251,20 @@ The description is "There is nothing special about these chairs, though you noti
 The Dining Room is north of the West Hallway 2F and west of the Kitchen.
 
 Check going from the Dining Room to West Hallway 2F:
-	if on fire of the tablecloth is true:
-		say "As you leave, you can hear the cook rushing in to try to put the fire out.";
-		now the description of the tablecloth is "The magic flames have engulfed the table cloth and even though the cook is trying his best to put them out, they persist.";
-		now the description of the cook is "The cook is furiously trying to put out the flames, though due to the magical nature of the flames";
-		now the cook is in the dining room.
+	if the location of the cook is the kitchen:
+		if on fire of the tablecloth is true:
+			say "As you leave, you can hear the cook rushing in to try to put the fire out.";
+			now the description of the tablecloth is "The magic flames have engulfed the table cloth and even though the cook is trying his best to put them out, they persist.";
+			now the description of the cook is "The cook is furiously trying to put out the flames, though due to the magical nature of the flames";
+			now the cook is in the dining room.
+			
+Check going from the Dining Room to the Kitchen:
+	if the location of the cook is the kitchen:
+		if on fire of the tablecloth is true:
+			say "As you leave, you can hear the cook rushing in to try to put the fire out.";
+			now the description of the tablecloth is "The magic flames have engulfed the table cloth and even though the cook is trying his best to put them out, they persist.";
+			now the description of the cook is "The cook is furiously trying to put out the flames, though due to the magical nature of the flames";
+			now the cook is in the dining room.
 
 [tableclothe]
 Cloth is a kind of thing.
@@ -345,7 +351,8 @@ The Belt Pouch is a thing.
 The description is "A plain, leather pouch attached to the captain's belt."
 The Belt Pouch is wearable.
 The Belt Pouch is a container.
-The Belt Pouch is open.
+The Belt Pouch is closed.
+The Belt Pouch is openable.
 The Golden Key is in the Belt Pouch.
 The Captain is wearing the Belt Pouch.
 
@@ -376,7 +383,6 @@ After reading a command when the command prompt is "Say the password. >":
 		reject the player's command.
 
 The Crew Quarters Door is a door.
-"It's the door between the Crew Quarters and the West Hallway 2F."
 The Crew Quarters Door is locked.
 The Crew Quarters Door is north of The Crew Quarters and south of The West Hallway 2F.
 
@@ -438,8 +444,9 @@ Check Fishing:
 				say "You cast the line into the toilet.  You wait a while but nothing takes the bait, er nothing takes the string.  Maybe you should get some bait.";
 			otherwise:
 				if the noun is a baited fishing rod:
-					say "You cast the line into the toilet.  You can hear the creature moving through the filth towards the bait.  There a tug on the string and you real it in.  You now have a very stanky fish!";
+					say "You cast the line into the toilet.  You can hear the creature moving through the filth towards the bait.  There a tug on the string and you real it in.  You now have a very stanky fish! EW it barfed out a key!  You drop the fish back into the toilet which drags the rod down with it.  There's now way you're going in after it.";
 					now the player has Crew Quarters Key;
+					remove the baited fishing rod from play;
 				otherwise:
 					say "You can't use [the noun] to fish!";
 		otherwise:
