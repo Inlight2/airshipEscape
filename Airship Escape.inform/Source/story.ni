@@ -19,7 +19,7 @@ Understand "light [thing]" as lighting.
 Understand "cast fire on [thing]" as lighting.
 
 Check lighting:
-	unless the noun is lightable, say "You consider lighting the [noun] but realize that it would be silly to do so."
+	unless the noun is lightable, say "You consider lighting the [noun] but realize that it would be dangerous to do so."
 	
 Check lighting:
 	unless the noun is not lightable, say "You hold your hand out in a fist, then open it slowly. Your hand warms up as a dancing ball of flame forms above your palm. With a gentle flick of your wrist, the flames fly out of your hand and to the [noun]. Now it is on fire.";
@@ -174,16 +174,24 @@ The bright flourescent lights are scenery in the West Hallway 2F.
 
 The Kitchen is a room.
 "The kitchen is warm and small, and there is a faint, pleasant aroma of waffles."
-
 The Kitchen is north of the East Hallway 2F.
+Instead of doing something other than going or examining while in the Kitchen:
+	If the location of the Cook is the Kitchen:
+		say "That's too risky, you don't want to be caught by the cook.";
+	otherwise:
+		continue the action.
+
 [waffle]
 The Waffle is a thing.
 The description of the waffle is "The waffle is still warm, cooked to a perfect golden brown color. Who or what WOULDN'T want to eat a waffle this good?"
 The Waffle is in the Kitchen.
 combinable of The waffle is true.
+The Waffle is edible.
+Instead of eating the waffle:
+	say "You resist the powerful erge to eat the waffle, knowing that it might come in handy later.".
 
 [can't grab the waffle when the cook is in the room]
-Instead of taking the waffle while the cook is in the kitchen:
+Before taking the waffle while the cook is in the kitchen:
 	say "You are about to get the waffle but realise that if you get any closer the cook will see you!  You're not going back to prison for a waffle!";
 	stop the action.
 
@@ -212,14 +220,16 @@ The Dining Room is north of the West Hallway 2F and west of the Kitchen.
 Check going from the Dining Room to West Hallway 2F:
 	if on fire of the tablecloth is true:
 		say "As you leave, you can hear the cook rushing in to try to put the fire out.";
+		now the description of the tablecloth is "The magic flames have engolfed the table cloth and even though the cook is trying his best to put them out, they persist.";
+		now the description of the cook is "The cook is furiously trying to put out the flames, though due to the magical nature of the flames";
 		now the cook is in the dining room.
 
-[table clothes +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++]
-Cloths are a kind of thing.
-Cloths has some truth state called on fire.
-The on fire of a Cloths is usually false.
+[tableclothe]
+Cloth is a kind of thing.
+Cloth has some truth state called on fire.
+The on fire of a Cloth is usually false.
 
-The tablecloth is a Cloths.
+The tablecloth is a Cloth.
 The dining table is a thing.
 The dining table is in the dining room.
 The tablecloth is on the dining table.
@@ -227,20 +237,67 @@ The tablecloth is on the dining table.
 instead of lighting something while the noun is the tablecloth:
 	say "You hold your hand out in a fist, then open it slowly. Your hand warms up as a dancing ball of flame forms above your palm. With a gentle flick of your wrist, the flames fly out of your hand and to the [noun]. Now it is on fire.";
 	now the on fire of the noun is true;
+	now the description of the tablecloth is "you can feel the warmth of the flames as they spread across the table cloth".
 
 The Crew Quarters is a room.
 The note is in the Crew Quarters.
 The printing of the note is "time whale"
 
-The Captain's Room is a room.
+The Captain's Room is a room. "The Captain is fast asleep in his bed at the far end of the room.   That key has to be around here somewhere.".
+
+[thigngs in the caotains room]
+A Desk is in the Captain's Room. "A desk that the Captain uses for looking at his many maps no doubt."
+The Desk is a container.
+The Desk is closed.
+The Desk is fixed in place.
+The Desk is not portable.
+The Desk is openable.
+
+A Closet is in the Captain's Room. "looks like a closet for clothes or something."
+The Closet is a container.
+The Closet is closed.
+The Closet is fixed in place.
+The Closet is not portable.
+The Closet is openable.
+
+A Chest is in the Captain's Room. "A chest for keeping valuables."
+The Chest is a container.
+The Chest is closed.
+The Chest is openable.
+
+Scrolls are a thing.
+Scrolls are in the chest.
+Scorlls are portable.
+Instead of taking Scrolls:
+	say "You don't need these, plus shouldn't you be worried about finding the key before the captain wakes up!?";
+	stop the action.
+
+A Chair is a thing.
+A Chair is in the Captain's Room.
+The Chair is a supporter.
+
 
 [floor 2 NPCs]
 
 The Captain is a man.
-The Captiain is in The Captain's Room.
+"The Captain is laying in a bed facing away from the door.  He has a pouch hanging off his belt.".
+The Captain is scenery.
+The Captain has some truth state called sleepy.
+The sleepy of the Captain is usually true.
+The Captain is in The Captain's Room.
+After examining the Captain:
+	If the sleepy of the Captain is true:
+		say "He is fast asleep".
+The Golden Key is a thing.
+The Belt Pouch is a thing.
+The Belt Pouch is wearable.
+The Belt Pouch is a container.
+The Belt Pouch is open.
+The Golden Key is in the Belt Pouch.
+The Captain is wearing the Belt Pouch.
 
 The Cook is a man.
-The Cook is in the kitchen.
+The Cook is in the kitchen
 
 [Doors for the 2nd floor]
 The Captain's Door is a door."The captain's door has the word 'Captain' writen across the top.  There is no door nob or key hole.  On a plaque on the door there is the message [line break] 'Only those with the password may enter to speak to the captain.'"
@@ -249,7 +306,7 @@ The Captain's Door is west of The West Hallway 2F and east of The Captain's room
 The Captain's Door is scenery.
 
 [door password]
-After examining The Captain's Door:
+After examining The Captain's Door while the Captain's Door is locked:
 	now the command prompt is "Say the password. >";
 	continue the action.
 	[check password]
@@ -279,7 +336,7 @@ The deck is a room. "The deck is the highest level of the ship.  All around you 
 [fishing pole]
 Fishing Rod is a thing. "There is a fishing rod".
 Fishing Rod are in the Deck.
-combinable of Fishing Rod is true.
+Combinable of Fishing Rod is true.
 
 Baited Fishing Rod is a thing. "The fishing rod now has some bait on the hook.  Lets get fishing!".
 
@@ -372,4 +429,5 @@ After reading a command when the player's command matches "waffle":
 	now the player is in the kitchen.
 After reading a command when the player's command matches "pancake":
 	now the player is in the Hallway 1F.
-
+After reading a command when the player's command matches "captain":
+	now the player is in the Captain's Room.
