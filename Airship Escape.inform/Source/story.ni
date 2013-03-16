@@ -72,6 +72,10 @@ A pot is closed and openable.
 A silver key is in the pot.
 The description of the silver key is "A small silver key that shines in the light."
 
+The Journal Page 1 is in the West Jail.
+"It's a page torn out of a journal. Most of it is unreadable. You can make out maybe one sentence."
+The printing of the journal page 1 is "The page reads: 'Many returned injured and dying but we defeated the wizards.'"
+
 There is a torch in the Jail.
 "You see a torch that looks lightable. You recall a fire spell that you learned when you first became a wizard."
 The torch is lightable.
@@ -118,7 +122,7 @@ Carry out reading: say "[printing of the noun]". Report reading: do nothing.
 
 Journal Page 2 is a thing in the North Servant Room.
 The description is "It's a journal page that looked like it was torn out carelessly. Something tells you that there's more than one lying around this ship."
-The printing of the Journal Page 2 is "Page 2 reads: 'We won the battle against the wizards!'"
+The printing of the Journal Page 2 is "Page 2 reads: 'There was a strange barrier protecting one of them, but we managed to knock him out and bring him back. We might get a random for him, assuming he's worth anything.'"
 
 [Make the North Servant Room door]
 The North Servant Room Door is a door.
@@ -133,7 +137,7 @@ Beds3 are scenery in the East Servant Room.
 
 Journal Page 3 is a thing in the East Servant Room.
 The description is "It's a journal page that looked like it was torn out carelessly. Something tells you that there's more than one lying around this ship."
-The printing of the Journal Page 3 is "Page 3 reads: 'We lost many in the battle.'"
+The printing of the Journal Page 3 is "Page 3 reads: 'All the wizards from the last battle are dead! But it's hardly a celebration. We lost too many in the battle. Guess we'll just have to recruit more. Hah! One day, pirates will rule over Waffle Town. It's only a matter of time.'"
 
 [Make the East Servant Room door]
 The East Servant Room Door is a door.
